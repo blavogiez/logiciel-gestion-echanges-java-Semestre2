@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file and its criteria values are used to check if the persons in the data files are valid or not.
+You can modify these to make your own rules ! -->
+<config>
+    <!-- Basic rules -->
+    <refuseAnimalAllergy>false</refuseAnimalAllergy>
+    <minAge>14</minAge>
+    <maxAge>19</maxAge>
+    
+    <!-- Mandatory criteria rules -->
+    <requireGenderSpecified>true</requireGenderSpecified>
+    <requireCountryOfOrigin>true</requireCountryOfOrigin>
+    <refuseEmptyHistory>false</refuseEmptyHistory>
+    
+    <!-- Food constraint rules -->
+    <requireFoodConstraintIfSpecified>false</requireFoodConstraintIfSpecified>
+    
+    <!-- Coherence rule (allergic person must not have an animal) -->
+    <refuseGuestAllergicIfHostHasAnimal>true</refuseGuestAllergicIfHostHasAnimal>
+    
+    <!-- Hobbies rule -->
+    <minHobbies>1</minHobbies>
+    <maxHobbies>5</maxHobbies>
+</config>

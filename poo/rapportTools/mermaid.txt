@@ -1,0 +1,68 @@
+classDiagram
+    class CountryVisit {
+        - guestCountry : String
+        - hostCountry : String
+        - guestPersons : List&lt;Person&gt;
+        - hostPersons : List&lt;Person&gt;
+        - start : LocalDate
+        - end : LocalDate
+        - bestExchanges : List&lt;Exchange&gt;
+        + getBestExchanges() : List&lt;Exchange&gt;
+        + getBestExchangesBruteforce() : List&lt;Exchange&gt;
+        + getBestExchangesGreedy() : List&lt;Exchange&gt;
+        + cleanInvalidExchanges() : void
+        + unmarkAsUed() : void
+        + markAsUsed() : void
+        + addGuests(guests : List&lt;Person&gt;) : void
+        + addHosts(hosts : List&lt;Person&gt;) : void
+    }
+
+    class PeopleManager {
+        - rawPeople : List&lt;Person&gt;
+        - peopleByCountry : Map&lt;String, List&lt;Person&gt;&gt;
+        - countriesAssociations : Map&lt;String, String&gt;
+        - countryVisits : List&lt;CountryVisit&gt;
+        + history : static List&lt;Exchange&gt;
+        + readCSV() : void
+        + exportCSV() : void
+        + serializeExchanges() : void
+        + updateLocalHistory() : void
+        + sortByCountry() : void
+        + firstWillVisitSecond(country1 : String, country2 : String) : void
+    }
+
+    class Person {
+        - forename : String
+        - name : String
+        - criteriaValues : Map&lt;Criteria, String&gt;
+        - hobbies : List&lt;String&gt;
+        - matched : boolean
+        + addCriteriaValue(Criteria, String) void
+        + canBeMatched() : boolean
+        + isThereIncoherence() : boolean
+    }
+
+    class Exchange {
+        - host : Person
+        - guest : Person
+        - affected : boolean
+        + evaluateAffinity() : double
+        + getAffinityScore() : double
+        + toTinyString() : String
+    }
+
+    class Criteria {
+        <<enumeration>>
+        COUNTRY_OF_ORIGIN
+        // ... other criteria
+    }
+
+    CountryVisit --> "0..*" Person : guestPersons
+    CountryVisit --> "0..*" Person : hostPersons
+    CountryVisit --> "0..*" Exchange : bestExchanges
+    PeopleManager --> "0..*" CountryVisit : countryVisits
+    PeopleManager --> "0..*" Person : peopleByCountry
+    PeopleManager --> "0..*" Exchange : history
+    Exchange --> Person : host
+    Exchange --> Person : guest
+    Person --> "0..*" Criteria : criteriaValues

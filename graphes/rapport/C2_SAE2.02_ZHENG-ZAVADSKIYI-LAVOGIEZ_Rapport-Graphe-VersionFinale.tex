@@ -1,0 +1,663 @@
+\documentclass{mytex}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{babel}
+\usepackage{tcolorbox}
+\usepackage{setspace}
+\usepackage{hyperref}
+
+\tcbuselibrary{skins, listings}
+\newtcblisting{codebox}{
+  enhanced, 
+  colback=black!3!white, 
+  toprule=1pt, 
+  bottomrule=1pt,
+  leftrule=0pt, 
+  rightrule=0pt, 
+  arc=0mm, 
+  attach boxed title to top left={yshift=-9pt, xshift=4pt},
+  title = Algorithme,
+  coltitle= black, 
+  boxed title style={colback=white},
+  listing only,
+  listing options={
+	language=java,
+	breaklines,
+	keywordstyle = \color{green!60!black},
+	keywordstyle = {[2]\color{orange}},
+	commentstyle = \color{gray}\itshape,
+	stringstyle  = \color{blue},
+	showstringspaces=false,
+	numbers = left,
+	numberstyle = \tiny,
+	stepnumber=1,
+	numbersep = 20pt
+  },
+}
+% pour les accents
+\lstset{
+	literate=
+		{é}{{\'e}}1
+		{è}{{\`{e}}}1
+		{ê}{{\^{e}}}1
+		{ë}{{\¨{e}}}1
+		{É}{{\'{E}}}1
+		{Ê}{{\^{E}}}1
+		{û}{{\^{u}}}1
+		{ù}{{\`{u}}}1
+		{â}{{\^{a}}}1
+		{à}{{\`{a}}}1
+		{Â}{{\^{A}}}1
+		{ç}{{\c{c}}}1
+		{Ç}{{\c{C}}}1
+		{ô}{{\^{o}}}1
+		{Ô}{{\^{O}}}1
+		{î}{{\^{i}}}1
+		{Î}{{\^{I}}}1,
+}
+
+\title{Rapport ECL - Template} %Titre du fichier
+
+\begin{document}
+
+%----------- Informations du rapport ---------
+
+\titre{Graphes - Version finale} %Titre du fichier .pdf
+\UE{SAÉ S2.02} %Nom de la UE
+\sujet{Théorie des graphes} %Nom du sujet
+
+\enseignant{Iovka \textsc{Boneva}} %Nom de l'enseignant
+
+\eleves{Baptiste \textsc{Lavogiez} \\
+		Mark \textsc{Zavadskiyi} \\ 
+		Angèl \textsc{Zheng}} %Nom des élèves
+
+%----------- Initialisation -------------------
+        
+\fairemarges %Afficher les marges
+\fairepagedegarde %Créer la page de garde
+\tabledematieres %Créer la table de matières
+
+%------------ Corps du rapport ----------------
+
+\section{Contexte}
+
+Ce \textbf{rapport} présentera les trois versions de la partie \emph{Graphes} de la SAÉ S2.02. Il traitera de modélisation théorique d'appariement, puis de la réalisation d'un pseudo-code. Le problème traité ici est de quantifier l'affinité entre un hôte et un visiteur donné présentant des caractéristiques propres (hobbies, préférence de genre, âge...) pour ensuite l'implémenter sous forme de graphe biparti en utilisant la matrice d'adjacence. Nous devrons juger de leur compatibilité afin de présenter les appariements les plus justes dans le cadre d'un échange scolaire. Tous les fichiers ou documents utilisés (scripts, archive...) sont disponibles dans l'archive de ce fichier.
+
+Les trois versions traiteront chacune d'une modélisation différente, en posant un autre regard sur les critères importants qui composeront les paires hôte-visiteur jugées comme les plus adaptées.
+
+\tsec{Précision}
+
+La notation se fait suivant un plan avec des sections précises et nécessaires. Ce document comporte toutes ces sections, mais inclut également des sections supplémentaires souhaitées à l'écriture pour plus de clarté (Introduction, Conclusion, Pour aller plus loin...).
+
+\section{Version 1} 
+
+\subsection {Introduction}
+
+Cette version sert à poser les premières briques de notre modèle et de notre façon de fonctionner. Elle utilise seulement les composantes de base, telles que la différence d'âge, les hobbies en commun et les préférences de genre. Il n'y a pas de contrainte à proprement parler.
+
+\subsection{Choix pour la modélisation}
+
+\insererfigure{img/version1/hotes_visiteurs.png}{5cm}{Tableau fictif d'hôtes et de visiteurs}{fig_hotes_visiteurs}
+
+\tsec{Forte affinité}
+
+La paire \emph{(H1,V1)} présente une \textbf{forte affinité} selon nos critères car :
+
+\begin{itemize}
+    \item Ils aiment tous deux le \textbf{football}.
+    \item Ils ont seulement \textbf{un mois d'écart d'âge}.
+    \item \emph{H1} préfère avoir un visiteur \textbf{male} et V1 est un \textbf{male}..
+\end{itemize}
+
+\tsec{Faible affinité}
+
+La paire \emph{(H2,V2)} présente une \textbf{faible affinité} selon nos critères car :
+
+\begin{itemize}
+    \item Ils n'ont \textbf{pas de hobbies en commun}.
+    \item Ils ont \textbf{un an d'écart}.
+    \item Leurs \textbf{préférences de genre} ne sont pas satisfaites.
+\end{itemize}
+
+\tsec{Arbitrage entre les critères d'affinité}
+
+Les trois autres paires  \emph{(H3, V3), (H4, V4), (H5, V5)} présentent une affinité relativement équivalente.
+Ces étudiants sont plus ou moins compatibles, à un niveau tel qu'on ne peut distinguer une faible ou forte affinité claire.
+
+\begin{itemize}
+	\item \emph{(H3,V3)} ont pour seul critère satisfait \textbf{la préférence de genre} de \emph{H3} envers \emph{V3}. La préfence de genre de \emph{V3} n'est, elle, pas satisfaite.
+	\item \emph{(H4,V4)} ont pour seul critère satisfait \textbf{la préférence de genre} de \emph{H4} envers \emph{V4}. \emph{V4} n'a pas de préférence de genre définie. Néanmoins, leur âge est très proche.
+	\item \emph{(H5,V5)} \textbf{partagent un hobby : le volley}. Si ce n'est ce point, ils ne partagent pas beaucoup d'affinité, n'ayant pas de préférence de genre satisfaite, et ayant un an d'écart.
+\end{itemize}
+
+\subsection{Exemple complet}
+
+Après une introduction théorique à notre vision de ce problème, nous pouvons déterminer un \textbf{exemple complet et pratique}, ayant 4 hôtes et 4 visiteurs sobrement nommés par ordre alphabétique.
+
+\insererfigure{img/version1/exemple_complet.png}{4.5cm}{Tableau complet d'hôtes et de visiteurs}{fig_exemple_complet}
+
+L'appariement que nous pensons être le meilleur est :
+
+\begin{itemize}
+	\item Alix et Xavier (cats, préférence de genre, âge proche)
+	\item Brune et Zorro (music, préférence de genre, âge très proche)
+	\item Charlie et Yvan (dogs, préférence de genre 2x, malgré un âge éloigné)
+	\item Diego et William (par élimination)
+\end{itemize}
+
+\subsection{Score d'affinité}
+
+Après avoir réfléchi sur un appariement entre les hôtes et visiteurs, il est temps de mettre en place une logique d'importance sur chaque critère. Pour ce faire, un algorithme en pseudo-code nous permet de définir un score d'affinité entre chaque hôte et visiteur. Ce score varie en fonction des carastéristiques similaires constatées afin d'appareiller des hôtes et visiteurs les plus compatibles possible. Plus ce score est bas, plus les personnes sont jugées compatibles.
+Ces valeurs seront utilisées par la suite afin de construire les poids des arêtes d'un \textbf{graphe biparti}.
+
+\begin{codebox}
+score_affinité_1(hôte, visiteur):
+    score = 10
+    // valeur initiale du score
+
+    hote.age=dateaujourdhui-hote.naiss
+    visiteur.age=dateaujourdhui-visiteur.naiss
+
+    diff = valeurabsolue(hôte.naiss - visiteur.naiss) 
+    // la différence se compte à la précision du mois
+    age_moyen = (hote.age + visiteur.age) / 2
+
+    si diff <= 18 mois
+        score += (diff / 12) * 0.9**age_moyen
+	score = score * 0.9 // diminution de 10% car proches en âge
+    sinon 
+        score += ((diff / 12) * 0.9**age_moyen) 
+	score = score * 1.5 // la différence est plus prononcée avec un facteur de 1.5 car ils sont assez éloignés en âge (+ de 18 mois)
+
+    // l'objectif est de calculer une différence qui est proportionnelle à l'âge des personnes.
+    // quand on a 10 ans, et l'autre 11 ans, l'autre est 10% plus âgé ;
+    // quand on a 20 ans, et l'autre 21 ans, l'autre est 5% plus âgé ;
+    // le but est de mettre la différence, et donc l'impact sur l'affinité, à l'échelle de l'âge de la personne.
+
+    si (visiteur.pair_gender existe) // préférence exprimée
+	    si hôte.gender != visiteur.pair_gender
+	        score = score * 1.5
+    // la séquence contraire de cet événement ne change pas le score, donc on cherche la négativité initiale de la comparaison
+    si(hote.pair_gender existe)// préférence exprimée
+	    si visiteur.gender != hôte.pair_gender
+	        score = score * 1.5
+
+    N = nombre_hobbies_en_commun(hôte, visiteur)
+        score = score * 0.85**N
+    // le score est diminué d'un facteur proportionnel au nombre de hobbies (*0.85 si un en commun, *0.72 si deux...)
+retourner arrondir(score, 2) 
+
+\end{codebox}
+
+Cet algorithme a été \textbf{ testé plusieurs fois, puis rééquilibré afin qu'un critère satisfait ne soit pas trop important par rapport aux autres}.
+Nous avons toutefois décidé d'apporter une \textbf{bonne importance aux préférences de genre et à l'âge}.
+
+\subsection{Retour sur l'exemple}
+
+En appliquant la fonction définie ci-dessus entre chaque hôte et visiteur, nous pouvons en déduire une matrice d'adjacence du graphe biparti entre les hôtes et visiteurs, les poids des arêtes étant les scores d'affinité.
+
+\insererfigure{img/version1/calcul_affinite.png}{4cm}{Matrice d'adjacence avec poids}{fig_matrice_adjacence}
+\vspace{4.5cm}%Espace de 1,5cm
+Représenté au \emph{format CSV}, on obtient le fichier suivant :
+
+\insererfigure{img/version1/calcul_affinite_csv.png}{4cm}{Fichier CSV généré}{fig_csv}
+\vspace{8.5cm}%Espace de 1,5cm
+
+Nous remarquons que les scores obtenus sont cohérents et qu'il n'y a pas d'énorme écart de valeur.
+
+Ensuite, nous n'avons plus qu'à calculer l'affectation de coût minimal pour ce graphe en utilisant l'archive \emph{jar} \textbf{\emph{"calcul-affectation"}} prenant en entrée un fichier CSV.
+Nous obtenons alors l'appariement suivant :
+
+\insererfigure{img/version1/execution_jar.png}{5cm}{Exécution de l'archive sur le graphe}{fig_jar_execution}
+L'appariement obtenu n'est pas totalement celui que nous avions identifié comme le meilleur, car il y a plusieurs possibilités et nous pouvons remarquer que Alix a du "sacrifier" sa bonne entente avec Xavier au profit de celle entre Diego et Xavier, car le "second choix" de Alix est moins coûteux que celui de Diego.
+
+Ce genre de remarque est difficile à établir sans programme, ou alors elle est affirmée avec peu de certitudes. Le programme nous aide alors à voir plus loin que les simples affinités en réglant des conflits d'appariement.
+
+\subsection{Conclusion}
+Cette première version nous a permis d'établir les bases de notre solution d'appariement en prenant en main les outils utiles, qu'ils soient théoriques (pseudo-code) ou pratiques (affectation, génération CSV...).
+
+\section{Version 2}
+
+\subsection{Introduction}
+Cette deuxième version du rapport de la partie \emph{Graphes} de la SAÉ S2.02 traitera de la modélisation d'un graphe biparti entre les hôtes et les visiteurs, ainsi que de l'implémentation d'un algorithme d'appariement.
+Cette partie traitera de l'implémentation de contraintes rédhibitoires, de la recherche d'appariement total et de l'optimisation de l'appariement.
+
+\subsection{Choix pour la modélisation}
+
+Nous nous appuirons sur l'exemple suivant :
+\insererfigure{img/version2/exemple_appui.png}{3cm}{Tableau exemple}{fig_exemple_appui}
+
+\tsec{Note}
+
+Nous partons du principe que les visiteurs n'amènent pas de nourriture ni d'animaux avec eux (donc les allergies et les préférences alimentaires des hôtes ne sont pas à prendre en compte).
+
+\tsec{Explication}
+
+Nous reprenons nos 8 personnes préférées mais cette fois nous les connaissons mieux. 
+En effet, nous les avons interrogées sur leurs préférences alimentaires, leurs allergies, leurs animaux de compagnie.
+
+Le fait de connaître plus d'informations sur les hôtes et les visiteurs nous permet de mieux les apparier et de faire une comparaison avec la première version par la suite.
+Les paires définies comme les meilleures ne seront pas forcément les mêmes que celles de la première version, car nous avons plus d'informations sur les personnes.
+
+Nous remarquons que malgré son allergie aux chats, Xavier les apprécie beaucoup. Il doit juste en rester éloigné.	
+Brune et Charlie adorent les chiens, mais leurs parents leur ont toujours interdit d'en avoir un...
+Diego a des animaux mais il n'y éprouve pas beaucoup d'intérêt, préférant manger du melon au citron.
+
+Ainsi, les hobbies et la possession d'animaux sont des critères n'étant pas forcément reliés !
+
+En plus de ces 8 personnes, d'autres se sont également manifestées pour participer à l'échange scolaire (car au total, la suite des questions nous demande 16 personnes).
+
+\tsec{L'historique}
+
+En plus de ça, nous avons implémenté la notion d'historique. Dans la représentation d'un tableau, cela est considéré comme :
+
+\begin{itemize}
+    \item soit il souhaite \textit{other}, un autre correspondant que le précédent
+    \item soit il n'a pas renseigné, donc il peut aussi bien être avec son précédent correspondant qu'un nouveau, cela dépendra du score.
+\end{itemize}
+
+Ainsi, si \textit{other} est renseigné, cela sera traité comme une contrainte.
+
+Pour ce qui est de qui est le précédent correspondant, cela sera stocké dans le code et non dans le tableau.
+L'attribut \textit{past\_people} présente les anciens correspondants de la personne. Il est \textit{caché} dans le pseudo-code.
+
+\subsection{Exemple avec appariement total}
+
+Pour cet exemple, nous devrons appareiller les hôtes et les visiteurs de manière à respecter les contraintes rédhibitoires.
+Il existe des incompatibilités dans cet ensemble, mais il est possible de trouver un appariement qui respecte les contraintes.
+
+Nous avons les incompatibilités suivantes :
+\begin{itemize}
+    \item Alix et Xavier | Zorro (allergie aux chats)
+    \item Alix et Yvan (allergie aux cacahuètes)
+    \item Brune et Zorro (Brune adore le lait, mais Zorro y est allergique)
+    \item Charlie et William (allergie au poisson)
+    \item Diego et Zorro (allergie aux chiens)
+\end{itemize}
+
+Ce qui nous donne l'appariement qui apparaît comme le meilleur :
+
+\begin{itemize}
+    \item Alix et William (par élimination, et ils n'ont pas d'incompatibilité)
+    \item Brune et Yvan (dans la version 1, Brune était avec Zorro, mais ils sont maintenant incompatibles. La deuxième meilleure affinité est avec Yvan).
+    \item Charlie et Zorro (car Zorro est incompatible avec tout le monde sauf Charlie)
+    \item Diego et Xavier (ils s'entendaient très bien dans la première version et n'ont pas d'incompatibilité)
+\end{itemize}
+
+Le calcul se fait à la main, en vérifiant hôte par hôte les visiteurs compatibles.
+Par la suite, un programme pourrait être mis en place pour faire ce calcul de manière automatique car des bases beaucoup plus grandes pourraient être utilisées.
+
+\subsection{Exemple sans appariement total}
+
+Nous avons ici nos 4 nouveaux hôtes et visiteurs.
+
+\tsec{La réunion impossible}
+
+Toutefois, il n'est pas possible de former quatre paires hôte-visiteur à cause d'incompatibilités.
+
+La raison est simple :
+
+\begin{itemize}
+    \item Yaoundé est incompatible avec tous les hôtes 
+    \item Par conséquent, il n'est pas possible de former quatre paires hôte-visiteur sans incompatibilité.
+    \item Un hôte au moins devra alors rester seul.
+\end{itemize}
+
+En ce qui concerne les autres, aucune autre personne n'est incompatible avec tout le monde.
+Nous pouvons alors former 3 paires hôte-visiteur au maximum (voir exemple ci-dessous).
+
+\tsec{Le meilleur appariement}
+
+Le meilleur appariement que nous avons trouvé est :
+
+\begin{itemize}
+    \item L'hôte restant et Yaoundé (ici, Carmen)
+    \item Bosphore et Williamelle (pas d'incompatibilité)
+    \item Douala et Xanthane (beaucoup de points en commun, et pas d'incompatibilité)
+    \item Ardente et Zoroark (points en commun, et pas d'incompatibilité)
+\end{itemize}
+
+\subsection{Score d'affinité}
+
+\tsec{Implémentation}
+
+Dans la logique énoncée qu'un score le plus bas possible signifie une forte affinité, nous devons rendre un score très élevé en cas d'incompatibilité afin de le rendre impossible à emprunter dans le cadre d'un parcours de graphe.
+Dans cette version, pour la sécurité des personnes, il est normalement impossible de faire un appariement entre deux personnes incompatibles et même la pire des affinités au monde doit primer sur une incroyable amitié mais incompatible.
+
+Il est à noter que la troisième version regardera cela d'un autre angle en cherchant à compenser des incompatibilités par des affinités fortes. Notre logique sera donc revue d'une autre manière.
+Il n'existe pas de solution parfaite, mais juste des points de vue et solutions différentes et elles seront explorées.
+
+\begin{codebox}
+score_affinité_2(hôte, visiteur):
+    score = 10
+
+    hote.age=dateaujourdhui-hote.naiss
+    visiteur.age=dateaujourdhui-visiteur.naiss
+
+    diff = valeurabsolue(hôte.naiss - visiteur.naiss) 
+    age_moyen = (hote.age + visiteur.age) / 2
+
+    si diff <= 18 mois
+        score += (diff / 12) * 0.9**age_moyen
+	    score = score * 0.9
+    sinon 
+        score += ((diff / 12) * 0.9**age_moyen) 
+	    score = score * 1.5
+
+    si ((visiteur.pair_gender existe) et (si hôte.gender != visiteur.pair_gender))
+	        score = score * 1.5
+    si ((hote.pair_gender existe) et (si visiteur.gender != hôte.pair_gender))
+	        score = score * 1.5
+
+    N = nombre_hobbies_en_commun(hôte, visiteur)
+        score = score * 0.85**N
+
+    // Gestion de l'incompatibilité
+    // On vérifie si l'hôte a un animal et si le visiteur est allergique ou si l'hôte a un aliment et si le visiteur a une contrainte alimentaire
+    // Si c'est le cas, on ajoute 1000 au score, car on veut juste savoir si c'est incompatible ou pas.
+
+    si (un animal dans hôte.has_animals est dans visiteur.animal_allergy) 
+    ou ((un aliment dans hôte.host_food est dans visiteur.food_constraint)) 
+    // on regarde l'historique
+    ou (hote.history == "other" et visiteur.nom est dans hote.past_people)
+    ou (visiteur.history == "other" et hote.nom est dans visiteur.past_people)
+        score += 1000
+
+    retourner arrondi(score, 2)
+\end{codebox}
+
+\tsec{Remarque}
+
+Nous ajoutons 1000 au score à la toute fin en cas d'incompatibilité. Pourquoi procéder ainsi ?
+
+Par exemple, l'hôte Xoxo et le visiteur Yoyo ont une affinité de 12, mais ils sont incompatibles car Xoxo possède un dragon et Yoyo est allergique aux dragons.
+Leur score sera donc de 1012.
+
+\begin{itemize}
+    \item Si nous ajoutons 1000 au score à la fin, cela ne changera pas le score d'affinité entre deux personnes compatibles.
+    \item Nous pourrons ainsi retrouver le score d'affinité entre deux personnes incompatibles en enlevant 1000 si la valeur est supérieure à 1000.
+    \item Nous pouvons ainsi analyser les scores d'affinité par la suite !
+\end{itemize}
+
+\tsec{Deuxième remarque}
+Le pseudo-code utilisé se base sur la première version et il a été optimisé en termes d'écriture et de lisibilité.
+Par conséquent, les commentaires du pseudo-code de la première version ont été supprimés mais sont toujours présents dans la première version.
+
+D'autres indications seront apportées par la suite (notamment sur pourquoi la valeur 1000 a été choisie).
+
+\subsection{Retour sur l'exemple}
+
+\tsec{Données utilisées}
+Les personnes utilisées lors du calcul seront celles de l'ensemble 1 et 2, d'abord séparément, puis ensuite réunifiées (partie supplémentaire à la notation).
+
+\tsec{Ensemble 1}
+Nous obtenons les matrices d'adjacence suivantes :
+
+\insererfigure{img/version2/matrice_ens1.png}{5cm}{Matrice d'adjacence de l'ensemble 1}{fig_matrice_ens1}
+
+\tsec{Ensemble 1, le meilleur appariement}
+
+Nous avons trouvé le meilleur appariement entre les hôtes et les visiteurs.
+
+\insererfigure{img/version2/jar_ens1.png}{5cm}{Meilleur appariement pour l'ensemble 1}{fig_jar_ens1}
+
+\tsec{Ensemble 1, Remarque}
+
+Nous remarquons que Alix et Xavier avaient la meilleure affinité si l'on enlève l'incompatibilité (1007.91 - 1000 = 7.91).
+C'est donc l'utilité d'avoir ajouté une valeur fixe.
+
+\tsec{Ensemble 2}
+
+Nous obtenons les matrices d'adjacence suivantes : 
+
+\insererfigure{img/version2/matrice_ens2.png}{5cm}{Matrice d'adjacence de l'ensemble 2}{fig_matrice_ens2}
+
+\tsec{Ensemble 2, le meilleur appariement}
+
+Nous avons trouvé le meilleur appariement entre les hôtes et les visiteurs.
+
+\insererfigure{img/version2/jar_ens2.png}{3.5cm}{Meilleur appariement pour l'ensemble 2}{fig_jar_ens2}
+
+Nous pouvons remarquer qu'effectivement, il y a 3 paires possibles au maximum dans cet ensemble. Carmen a du être appareillé avec Yaoundé. Cette arête pesant plus de 1000, et représentant donc une incompatibilité, n'est pas à prendre en compte.
+
+\textbf{Ainsi, Carmen et Yaoundé, sont, dans cette version, seuls.}
+
+\subsection{Pour aller plus loin}
+
+Cette partie est supplémentaire à la notation et sert d'argument pour la suite.
+
+Nous pouvons également chercher un appariement entre les 16 personnes !
+
+\insererfigure{img/version2/matrice_ens1ens2.png}{3.5cm}{Matrice d'adjacence de l'ensemble 1 et 2}{fig_matrice_ens1ens2}
+
+\insererfigure{img/version2/jar_ens1ens2.png}{7cm}{Meilleur appariement pour l'ensemble 1 et 2}{fig_jar_ens1ens2}
+
+\subsection{Robustesse de la modélisation (question difficile)}
+
+Cette partie consiste à analyser la capacité de notre modèle à faire respecter les contraintes avec des paramètres flexibles.
+
+La question est la suivante :
+
+\tsec{Notre modélisation respecte-elle les contraintes, peu importe l'ensemble défini ?}
+
+La réponse est :
+
+\begin{itemize}
+    \item Oui, dans le sens où une relation incompatible a un score qu'il est impossible de dépasser avec la pire affinité non incompatible possible
+    \item Concrètement, comme dans le meilleur appariement pour l'ensemble 2, si le meilleur appariement comprend une incompatibilité, au vu du grand écart entre une mauvaise affinité (environ un score de 30) et une affinité quelconque incompatible (1000+).
+\end{itemize}
+
+Dans le cas d'un grand exemple, tel que l'ensemble 1 et 2 réuni (16 personnes, donc 64 affinités calculées).
+
+\tsec{Rappel}
+
+\insererfigure{img/version2/jar_ens1ens2.png}{7cm}{Meilleur appariement pour l'ensemble 1 et 2}{fig_jar_ens1ens2_recall}
+
+Nous voyons qu'il y a beaucoup de relations incompatibles (score à plus de 1000), or, lors de l'appariement elles sont toujours respectées.
+
+\tsec{Justification}
+
+Nous disons que notre modèle garantit que les contraintes soient respectées, c'est à dire qu'il est impossible de dépasser un score de 1000 (le minimum pour une relation incompatible quelconque) avec une relation n'ayant pas d'incompatibilité. 
+
+\tsec{Ce qui revient à dire que n'importe quelle relation non incompatible sera toujours préférée à n'importe quelle relation incompatible, peu importe les affinités dans les deux cas.}
+
+Comment le prouver ? Prenons l'exemple de la pire affinité possible sans incompatibilité selon le pseudo-code.
+
+\begin{itemize}
+    \item On démarre avec un score de 10.
+    \item On a une différence d'âge de 10 ans (ce qui est déjà quasiment impossible en pratique) et un age moyen de 10 pour exemple (5 et 15 ans).
+    \item Soit score += (120 mois de différence * 0.9**10) --> on ajoute 41.84 au score et on le multiplie par 1.5. Soit 77.76
+    \item Les deux préférences de genre ne sont pas respectées. On augmente donc le score de 1.5 deux fois, soit par 2.25
+    \item 77.76 * 2.25 = 174.96
+    \item Ensuite, il n'y a pas de hobbies en commun donc le score est multiplié par 0.85 puissance 0, soit 1. Le score ne change donc pas.
+    \item Enfin, il n'y a pas d'incompatibilité, donc le score ne change pas.
+\end{itemize}
+
+En résumé, on parle d'une situation déjà très improbable en terme de différence d'âge et qui a la pire affinité possible. On obtient 175 de score d'affinité, soit le maximum de toute relation sans incompatibilité,  ce qui reste assez éloigné de 1000, soit le minimum de toute relation avec incompatibilité.
+
+\tsec{Nous pouvons donc affirmer que n'importe quelle relation non incompatible sera toujours préférée à n'importe quelle relation incompatible, peu importe les affinités dans les deux cas.}
+
+\subsection{Conclusion}
+Cette deuxième version nous a permis d'étendre les capacités de notre solution d'appariement en implémentant la gestion de contraintes rédhibitoires, en utilisant un algorithme donnant des scores élevés résultant en arêtes impossibles à emprunter dans le graphe biparti.
+
+\section{Version 3}
+
+\subsection{Introduction}
+
+Cette version traitera des éléments de la deuxième version sous un autre angle, en suivant ce paradigme :
+
+\tsec{Est-ce qu'une incompatibilité peut être surpassée par une énorme affinité ?}
+
+Nous nous demandons si, des personnes avec une forte affinité, partageant beaucoup de critères satisfaits, peuvent "passer au dessus" de certaines incompatibilités.
+La deuxième version voyait ces contraintes comme rédhibitoires et comme impossibles à surpasser.
+
+\tsec{Une allergie insurmontable ?}
+
+On peut traiter les critères alimentaires autant comme des allergies (deuxième version) que par de simples préférences très souhaitables (troisième version).
+
+On peut aussi traiter les allergies animales comme regrettables, mais aussi évitables.
+
+Voici l'exemple suivant de comment pourrait-on faire en sorte d'appareiller deux personnes avec une forte affinité mais ayant des incompatibilités :
+
+\begin{itemize}
+    \item Toto et Zozo sont de véritables âmes soeur. Ils adorent le football, le paintball, l'accrobranche, la plage, la science-fiction. En plus, ils sont nés le même jour et la même année !
+    \item alheureusement, Toto a un chat chez lui car son frère, Dodo, adore les chats.
+    \item Zozo est allergique aux chats. Si il est dans la même pièce qu'un chat pendant plus de cinq minutes, il est très probable qu'il doive aller aux urgences.
+    \item Toto et Zozo sont très embêtés. Ils s'apprêtent à avoir l'échange parfait mais à cause d'un chat, Zozo serait mis en danger.
+    \item Toto décide, avec ses parents Nono et Vovo, de faire garder le chat de Dodo, Wowo, chez son cousin Gogo, qui adore les chats également.
+    \item Dodo est assez embêté et il demande, en compensation, que Toto fasse la vaisselle pendant un mois. Les deux acceptent.
+\end{itemize}
+
+Nous retenons de cet exemple qu'il est possible, dans la vraie vie, de s'arranger pour que des incompatibilités ne soient plus un obstacle, si l'affinité au bout du compte vaut le coup.
+
+\tsec{Par conséquent, de tels sacrifices nécessitent une forte affinité. On ne prend pas des dispositions spéciales pour n'importe quelle raison.}
+
+Lors de la modélisation, nous ferons alors attention à bien définir les scores d'affinité des relations parfaites mais incompatibles afin qu'elles soient parfois préférées à des relations moyennes.
+
+En somme, cela dépend de la vision que l'on donne à notre modélisation, et en \textit{Graphes}, c'est toute l'essence de la modélisation ; appliquer plusieurs points de vue, sans forcément en chercher un seul unique et parfait.
+Il est donc important pour nous d'explorer plusieurs versions et possibilités d'appariement !
+
+\subsection{Équilibrage entre affinité | incompatibilité}
+
+Nous reprenons notre ensemble 1 et 2 précédemment énoncé car il répond à tous nos besoins pour cette version.
+L'objectif de cet exemple est de démontrer \textbf{combien et quel type d'affinité permet de compenser combien et quel type d'incompatibilité.}
+
+\insererfigure{img/version3/ensemble_1_et_2.png}{5cm}{Ensemble 1 et 2}{fig_show_ens1ens2}
+
+\tsec{Exemple d'appariement}
+
+\begin{itemize}
+    \item Brune et Zorro : ils ont une contrainte mais ont toutefois démontré une très grande affinité. Avec ce modèle, elles devraient être appareillables sous de bonnes conditions.
+    \item Carmen et Yaoundé : leurs préférences de genre sont respectées et ils partagent un hobby. Ils devraient bien s'attendre malgré l'allergie aux lapins.
+    \item Diego et Zorro : ils partagent un hobby et une seule préférence de genre est respectée. Avec l'allergie aux chiens, leur score est considéré comme moyen ; d'autres paires seront normalement préférées. Ce n'est pas assez pour compenser.
+    \item Carmen et Xanthane : ils n'ont pas de hobby en commun, les préférences de genre ne sont pas respectées, et ils ont deux allergies (cacahuètes, lapins). Leur affinité sera parmi les pires car ici aucun critère ne peut rattraper ces deux allergies.
+    \item Globalement, nous pourrons observer la matrice d'adjacence des deux ensembles dans la deuxième version en comparaison à la troisième version pour donner à voir les différences concrètes.
+\end{itemize}
+
+En somme, et toujours selon l'algorithme, le score peut surtout baisser grâce aux hobbies en commun, qui peuvent donc compenser une incompatibilité.
+De plus, la préférence de genre, si satisfaite, n'engendre pas la multiplication du score par 1.5.
+
+Pour ce qui est de combien, la réponse est mathématique car le partage se fait surtout dans l'algorithme et traduit au mieux notre pensée.
+
+\subsection{Score d'affinité}
+
+\tsec{Implémentation}
+
+Ici, la contrainte est gérée comme une préférence. Ainsi, le but est que le score d'affinité ne soit pas extrêmement élevé dans ces cas (d'une façon opposée à la version 2) afin que le chemin puisse être emprunté dans un graphe, en cas de fortes affinités.
+
+\begin{codebox}
+score_affinité_3(hôte, visiteur):
+
+    score = 10
+    si (un animal dans hôte.has_animals est dans visiteur.animal_allergy) score+= 10
+    si (un aliment dans hôte.host_food est dans visiteur.food_constraint) score+= 10
+    si (hote.history == "other" et visiteur.nom est dans hote.past_people) score+= 10
+    si (visiteur.history == "other" et hote.nom est dans visiteur.past_people) score+= 10
+    
+    hote.age=dateaujourdhui-hote.naiss
+    visiteur.age=dateaujourdhui-visiteur.naiss
+
+    diff = valeurabsolue(hôte.naiss - visiteur.naiss) 
+    age_moyen = (hote.age + visiteur.age) / 2
+
+    si diff <= 18 mois
+        score += (diff / 12) * 0.9**age_moyen
+	    score = score * 0.9
+    sinon 
+        score += ((diff / 12) * 0.9**age_moyen) 
+	    score = score * 1.5
+
+    si ((visiteur.pair_gender existe) et (si hôte.gender != visiteur.pair_gender))
+	        score = score * 1.5
+    si ((hote.pair_gender existe) et (si visiteur.gender != hôte.pair_gender))
+	        score = score * 1.5
+
+    N = nombre_hobbies_en_commun(hôte, visiteur)
+        score = score * 0.85**N
+
+    retourner arrondi(score, 2)
+\end{codebox}
+
+\tsec{Remarque}
+
+Nous choississons d'incrémenter le score au début, car il peut par la suite être baissé par le nombre de hobbies partagé, mais aussi réaugmenté si les contraintes ne suffisent pas. Nous trouvons que cette logique est une des plus équilibrées afin de réutiliser notre algorithme pour le plus de clarté.
+La valeur de 10, choisie comme incrémentation du score pour chaque contrainte, a été choisie après plusieurs essais. Après avoir essayé 15, la contrainte était trop difficile à surmonter dans l'algorithme.
+
+\tsec{En utilisant la valeur 10 à chaque contrainte, nous ouvrons la porte, pas de beaucoup, mais d'assez pour que les paires les plus courageuses puissent s'y faufiler grâce à leur affinité dite compensatoire.}
+
+\subsection{Retour sur l'exemple}
+
+\tsec{Données utilisées}
+Afin de permettre une comparaison avec les résultats obtenus lors de la deuxième version, les mêmes ensembles seront utilisés.
+Cela permettra de voir quelles paires peuvent être nouvellement formés selon ce nouveau paradigme !
+
+\tsec{Ensemble 1}
+Nous obtenons les matrices d'adjacence suivantes :
+
+\insererfigure{img/version3/matrice_ens1.png}{5cm}{Matrice d'adjacence de l'ensemble 1}{fig_matrice_ens1}
+
+\tsec{Ensemble 1, le meilleur appariement}
+
+Nous avons trouvé le meilleur appariement entre les hôtes et les visiteurs.
+
+\insererfigure{img/version3/jar_ens1.png}{5cm}{Meilleur appariement pour l'ensemble 1}{fig_jar_ens1}
+
+\tsec{Ensemble 1, Remarque}
+
+Nous remarquons que Brune et Zorro figurent comme paire dans l'affectation de coût minimal malgré leur contrainte.
+L'algorithme a permis de passer au dessus de cette contrainte car nous avons observé une forte affinité entre les deux. La contrainte a augmenté le score, certes, mais le reste a permis de rattraper.
+C'est là l'utilisé de cette troisième version.
+
+\tsec{Ensemble 2}
+
+Nous obtenons les matrices d'adjacence suivantes : 
+
+\insererfigure{img/version3/matrice_ens2.png}{5cm}{Matrice d'adjacence de l'ensemble 2}{fig_matrice_ens2}
+
+\tsec{Ensemble 2, le meilleur appariement}
+
+Nous avons trouvé le meilleur appariement entre les hôtes et les visiteurs.
+
+\insererfigure{img/version3/jar_ens2.png}{5cm}{Meilleur appariement pour l'ensemble 2}{fig_jar_ens2}
+
+Nous pouvons remarquer que le coût total de l'affectation de cet ensemble 2 est plus élevé que celui de l'ensemble 1 (72 > 54.5) car cet ensemble a été créé pour que des contraintes y figurent. La différence entre les deux ensembles reste à notre sens assez équilibrée compte tenu d'une création distincte.
+
+\textbf{Ainsi, Carmen et Yaoundé, sont, dans cette version, appareillés malgré une contrainte car ils ont une affinité que l'on peut qualifier de moyennement bonne.}
+
+\tsec{Ensemble 1 et 2}
+
+Ces ensembles sont réunifiés afin d'obtenir un exemple aux données plus larges.
+
+Nous pouvons également chercher un appariement entre les 16 personnes !
+
+\insererfigure{img/version3/matrice_ens1ens2.png}{3.5cm}{Matrice d'adjacence de l'ensemble 1 et 2}{fig_matrice_ens1ens2ff}
+
+\insererfigure{img/version3/jar_ens1ens2.png}{7cm}{Meilleur appariement pour l'ensemble 1 et 2}{fig_jar_ens1ens2dd}
+
+\tsec{Avons-nous obtenu des scores proches ?}
+
+En somme, en analysant les résultats (matrice d'adjacence CSV pour l'ensemble 1 et 2), nous pouvons déterminer à quel point les scores obtenus sont proches ou non.
+
+\tsec{Appréciation directe}
+
+En jetant un oeil rapidement aux résultats, nous voyons que les résultats sont assez proches, s'étendant de 11 à 102 au plus.
+
+\tsec{Variance et écart-type}
+\insererfigure{img/version3/group_by_scans.png}{7cm}{Tableau de variance et d'écart-type}{v3::fig-gbs}
+
+Il n'y a pas d'écart trop impressionnant compte tenu du fait que l'ensemble 2 a été créé pour qu'il y ait plus de contraintes, cela expliquant l'écart. Néanmoins il reste normal au vu de l'objectif de l'algorithme d'implémenter les contraintes comme des préférences. Certaines paires n'ont donc pas pu compenser avec l'affinité qu'elles avaient, les points communs étant trop peu nombreux.
+
+\tsec{Moyenne et médiane}
+\insererfigure{img/version3/global_stats.png}{2cm}{Moyenne et médiane}{v3::fig-moymed}
+
+La moyenne et la médiane sont assez proches, donc on ne peut pas dire que certaines affinités "tirent" vers le bas ou le haut les autres, car les scores sont assez équilibrés.
+
+Avec ces éléments, nous pouvons affirmer que \textbf{nous avons obtenu des scores proches avec cet algorithme flexible et équilibré}.
+
+\subsection{Conclusion}
+Cette troisième version nous a permis de voir sous un autre angle la gestion de contraintes rédhibitoires en les interprétant comme des préférences, en utilisant un algorithme donnant des scores équilibrés aux contraintes et affinités, résultant en arêtes possibles à emprunter dans le graphe biparti si une affinité suffisante a permis de compenser les contraintes, à l'image des paires énoncées en exemple.
+
+\merci
+
+\end{document}

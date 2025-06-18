@@ -1,0 +1,12 @@
+FORENAME,NAME,COUNTRY_OF_ORIGIN,BIRTH_DATE,GUEST_ANIMAL_ALLERGY,HOST_HAS_ANIMAL,GUEST_FOOD_CONSTRAINT,HOST_FOOD,HOBBIES,GENDER,PAIR_GENDER,HISTORY
+Lisa,KING,ITALY,2008-08-31,no,no,halal;vegan,,science;travel,female,female,other
+Victoria,PATRICK,ITALY,2007-01-10,yes,yes,,,robotics;chess,female,female,other
+Vincent,WOODS,ITALY,2008-08-13,yes,yes,halal;nonuts,vegetarian;lactose,fashion;sports,male,,
+David,NGUYEN,ITALY,2006-09-01,no,yes,nonuts;vegetarian,,fashion;theatre;hiking,male,female,other
+Jerome,MILLER,ITALY,2007-10-06,no,yes,shellfish,vegetarian;halal,books;dance,male,female,same
+David,NGUYEN,ITALY,2006-09-01,no,yes,nonuts;vegetarian,,pizza;theatre;hiking,male,female,other
+Jerome,MILLER,ITALY,2007-10-06,no,yes,shellfish,vegetarian;halal,books;dance,female,other,same
+Sophie,LAMBERT,FRANCE,2006-11-30,no,no,vegan,halal,dance;culture,female,male,other
+Luc,BERTRAND,FRANCE,2007-09-18,yes,no,nonuts,vegetarian,chess;travel,male,female,same
+Jean,MARTIN,FRANCE,2008-05-20,yes,yes,,,sports;gaming,male,male,same
+Marie,DUBOIS,FRANCE,2007-02-14,no,no,gluten-free,vegetarian,reading;painting,female,female,

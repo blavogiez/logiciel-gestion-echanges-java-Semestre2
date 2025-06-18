@@ -1,0 +1,1 @@
+java "-Dprism.order=sw" "-Dprism.verbose=true" "-Djava.library.path=lib/javafx-sdk-21.0.7/bin" --module-path "lib/javafx-sdk-21.0.7/lib" --add-modules javafx.controls,javafx.fxml,javafx.graphics,javafx.base,javafx.media,javafx.web -jar app.jar

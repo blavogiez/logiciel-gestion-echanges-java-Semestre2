@@ -1,0 +1,107 @@
+classDiagram
+    class CountryVisit {
+        - guestCountry : String
+        - hostCountry : String
+        - guestPersons : List<Person>
+        - hostPersons : List<Person>
+        - year : int
+        - bestExchanges : List<Exchange>
+        + getBestExchanges() : List<Exchange>
+        + getBestExchangesBruteforce() : List<Exchange>
+        + getBestExchangesGreedy() : List<Exchange>
+        + cleanInvalidExchanges() : void
+        + unmarkAsUsed() : void
+        + markAsUsed() : void
+        + addGuests(guests : List<Person>) : void
+        + addHosts(hosts : List<Person>) : void
+    }
+
+    class PeopleManager {
+        - rawPeople : List<Person>
+        - peopleByCountry : Map<String, List<Person>>
+        - countriesAssociations : Map<String, String>
+        - countryVisits : List<CountryVisit>
+        + history : static List<Exchange>
+        + readCSV() : void
+        + exportCSV() : void
+        + serializeExchanges() : void
+        + updateLocalHistory() : void
+        + sortByCountry() : void
+        + firstWillVisitSecond(country1 : String, country2 : String) : void
+    }
+
+    class Person {
+        - forename : String
+        - name : String
+        - criteriaValues : Map<Criteria, String>
+        - hobbies : List<String>
+        - matched : boolean
+        + addCriteriaValue(Criteria, String) void
+        + canBeMatched() : boolean
+        + isThereIncoherence() : boolean
+        + getCriteriaValue(Criteria) : String
+        + getHobbies() : List<String>
+    }
+
+    class Exchange {
+        - host : Person
+        - guest : Person
+        - affected : boolean
+        + evaluateAffinity() : double
+        + getAffinityScore() : double
+        + toTinyString() : String
+    }
+
+    class Criteria {
+        <<enumeration>>
+        COUNTRY_OF_ORIGIN
+        BIRTH_DATE
+        GUEST_ANIMAL_ALLERGY
+        HOST_HAS_ANIMAL
+        HISTORY
+        GUEST_FOOD_CONSTRAINT
+        HOST_FOOD
+        // etc.
+    }
+
+    class CriteriaConfigValidator {
+        - config : ConfigurationRules
+        + validatePerson(Person) : ValidationResult
+        + getConfig() : ConfigurationRules
+    }
+
+    class ConfigurationRules {
+        - refuseAnimalAllergy : boolean
+        - minAge : int
+        - maxAge : int
+        - requireGenderSpecified : boolean
+        - refuseEmptyHistory : boolean
+        - maxHobbies : int
+        - minHobbies : int
+        - requireCountryOfOrigin : boolean
+        - requireFoodConstraintIfSpecified : boolean
+        + toString() : String
+    }
+
+    class ValidationResult {
+        - valid : boolean
+        - reasons : List<String>
+        + isValid() : boolean
+        + hasReasons() : boolean
+        + getReasons() : String
+        + addReason(reason : String) : void
+        + setValid(valid : boolean) : void
+    }
+
+    %% Relations
+    CountryVisit --> "0..*" Person : guestPersons
+    CountryVisit --> "0..*" Person : hostPersons
+    CountryVisit --> "0..*" Exchange : bestExchanges
+    PeopleManager --> "0..*" CountryVisit : countryVisits
+    PeopleManager --> "0..*" Person : peopleByCountry
+    PeopleManager --> "0..*" Exchange : history
+    Exchange --> Person : host
+    Exchange --> Person : guest
+    Person --> "0..*" Criteria : criteriaValues
+    CriteriaConfigValidator --> ConfigurationRules : config
+    CriteriaConfigValidator --> ValidationResult : validatePerson

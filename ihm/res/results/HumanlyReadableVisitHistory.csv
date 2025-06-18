@@ -1,0 +1,11 @@
+YEAR,HOST_COUNTRY,GUEST_COUNTRY,HOST_ID,GUEST_ID,AFFINITY_SCORE
+2023,iran,germany,92,89,11.00
+2023,iran,germany,94,82,10.00
+2023,iran,germany,120,144,11.92
+2023,iran,germany,191,60,10.20
+2024,germany,iran,82,191,18.00
+2024,germany,iran,174,59,8.50
+2025,iran,germany,92,60,16.00
+2025,iran,germany,94,82,1.00
+2025,iran,germany,120,134,16.00
+2025,iran,germany,191,89,11.00

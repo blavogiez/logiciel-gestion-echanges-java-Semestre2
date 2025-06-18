@@ -1,0 +1,76 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "FXMLdemo",
+      "request": "launch",
+      "mainClass": "application.FXMLdemo",
+      "projectName": "renduIHM_3f110ec2",
+      "vmArgs": "--module-path lib/javafx-sdk-21.0.7/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "test",
+      "request": "launch",
+      "mainClass": "application.test",
+      "projectName": "ihm_2da07408"
+    },
+    {
+      "type": "java",
+      "name": "HelloFX",
+      "request": "launch",
+      "mainClass": "application.HelloFX",
+      "projectName": "ihm_7a7f6d8e",
+      "vmArgs": "--module-path lib/javafx-sdk-21.0.7/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "maquette.FXMLdemo",
+      "request": "launch",
+      "mainClass": "maquette.FXMLdemo",
+      "projectName": "ihm_7a7f6d8e",
+      "vmArgs": "--module-path lib/javafx-sdk-21.0.7/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "application.FXMLdemo",
+      "request": "launch",
+      "mainClass": "application.FXMLdemo",
+      "projectName": "ihm_7a7f6d8e",
+      "vmArgs": "--module-path lib/javafx-sdk-21.0.7/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "application.Main",
+      "request": "launch",
+      "mainClass": "application.Main",
+      "projectName": "ihm_7a7f6d8e",
+      "vmArgs": "--module-path lib/javafx-sdk-21.0.7/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "application.FluxAndExceptionsDemo",
+      "request": "launch",
+      "mainClass": "application.FluxAndExceptionsDemo",
+      "projectName": "ihm_2da07408",
+      "vmArgs": "--module-path lib/javafx-sdk-21.0.7/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "application.FXMLdemo (2da07408)",
+      "request": "launch",
+      "mainClass": "application.FXMLdemo",
+      "projectName": "ihm_2da07408",
+      "vmArgs": "--module-path lib/javafx-sdk-21.0.7/lib --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "maquette.FXMLdemo (2da07408)",
+      "request": "launch",
+      "mainClass": "maquette.FXMLdemo",
+      "projectName": "ihm_2da07408",
+      "vmArgs": "--module-path lib/javafx-sdk-21.0.7/lib --add-modules javafx.controls,javafx.fxml"
+    }
+  ]
+}

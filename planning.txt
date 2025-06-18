@@ -1,0 +1,31 @@
+Semaines 1 (du 21/04) et 2 (du 28/04)
+— [poo]classes de base
+— [poo]compatibilité entre adolescents (contraintes)
+— [poo]développement des classes de tests correspondantes, illustrant le bon fonctionnement des prin-cipales méthodes de ces classes
+⇒ commits étiquetés POO-v1 à faire avant le 6/05/2023.
+— [graphes] rendu du rapport contenant au moins la Version 1 (sur Moodle).
+
+Semaines 3 (du 5/05) et 4 (du 12/05)
+— [poo]gestion de la validité des critères par un mécanisme d’exception
+— [poo]développement des règles spécifiques de compatibilité pour certains pays
+⇒ commits étiquetés POO-v2 GRAPHE-v1 à faire avant le 20/05/2023
+— [graphes] rendu du rapport complet (Version 1, Version 2 et Version 3) (sur Moodle).
+
+Semaines 5 (du 19/05) et 6 (du 26/05)
+— [poo]import par fichier de format csv, répondant à la structure donnée
+— [poo]export d’un résultat sous format csv
+— [poo]gestion de l’historique par sérialisation binaire
+— [poo]implémentation d’un jeu de données montant le bon fonctionnement du nouveau système
+d’affectation
+— [ihm]maquettage et prototype basse fidélité
+⇒ commits étiquetés POO-v3 GRAPHE-v2 IHM-v1, à faire au plus tard une journée avant la séance
+suivante de SAÉ (la semaine du 29/05/2023).
+
+Semaines 7 (du 2/06) et 8 (du 9/06)
+— [poo]prétraitement des critères des adolescents sur demande
+— [poo]prétraitement automatique des critères en cas d’existence d’un fichier de configuration à un
+emplacement prédéfini
+— [ihm]prototype haute fidélité
+— [ihm]développement en JavaFX
+⇒ commits étiquetés POO-v4 IHM-v2 à rendre la semaine du 9 juin, à une date qui sera précisée
+ultérieurement.

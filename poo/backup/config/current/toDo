@@ -1,0 +1,9 @@
+- echanges en cours
+- ajouter echange arbitraire
+- rendre un échange impossible
+- check que y'a pas un autre échange pareil dans la même année
+- map<integer, List<CountryVisit>>
+
+mettre qu'on a mis en plus la notion que les autres ne sont pas appareillables après
+
+afficher les échanges en lien avec une country visit

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maquette.ListController">
+   <children>
+      <VBox fx:id="histo" alignment="CENTER" prefHeight="458.0" prefWidth="665.0" spacing="10">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="751.0">
+               <children>
+                  <Label layoutX="302.0" layoutY="12.0" prefHeight="33.0" prefWidth="142.0" text="Historique">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#buttonHome" prefHeight="33.0" prefWidth="105.0" text="Accueil" />
+               </children>
+            </Pane>
+            <ListView fx:id="listHisto" prefHeight="505.0" prefWidth="665.0" />
+            <Pane prefHeight="222.0" prefWidth="665.0">
+               <children>
+                  <Button layoutX="638.0" layoutY="21.0" mnemonicParsing="false" onAction="#pressedButtonMinusHisto" text="&lt;" />
+                  <Button layoutX="703.0" layoutY="21.0" mnemonicParsing="false" onAction="#pressedButtonPlusHisto" text="&gt;" />
+                  <Label fx:id="pageNumber" layoutX="680.0" layoutY="25.0" text="1" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <VBox fx:id="enCours" alignment="CENTER" prefHeight="458.0" prefWidth="665.0" spacing="10">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="751.0">
+               <children>
+                  <Label layoutX="273.0" layoutY="11.0" prefHeight="35.0" prefWidth="200.0" text="Échange En Cours">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#buttonHome" prefHeight="33.0" prefWidth="105.0" text="Accueil" />
+               </children>
+            </Pane>
+            <ListView fx:id="listEnCours" prefHeight="505.0" prefWidth="665.0" />
+            <Pane prefHeight="222.0" prefWidth="665.0">
+               <children>
+                  <Button layoutX="638.0" layoutY="21.0" mnemonicParsing="false" onAction="#pressedButtonMinusEnCours" text="&lt;" />
+                  <Button layoutX="703.0" layoutY="21.0" mnemonicParsing="false" onAction="#pressedButtonPlusEnCours" text="&gt;" />
+                  <Label fx:id="pageNumber2" layoutX="680.0" layoutY="25.0" text="2" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <VBox fx:id="echange" alignment="CENTER" prefHeight="458.0" prefWidth="665.0" spacing="10">
+         <children>
+            <Pane fx:id="modifPage" prefHeight="200.0" prefWidth="751.0">
+               <children>
+                  <Label fx:id="nomEchange" layoutX="239.0" layoutY="12.0" prefHeight="33.0" prefWidth="268.0" text="PlaceHolder" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#buttonHome" prefHeight="33.0" prefWidth="105.0" text="Accueil" />
+                  <Button fx:id="buttonModif" layoutX="661.0" layoutY="17.0" mnemonicParsing="false" onAction="#buttonModifier" text="Modifier" />
+               </children>
+            </Pane>
+            <ListView fx:id="listPaires" prefHeight="505.0" prefWidth="665.0" />
+            <Pane prefHeight="222.0" prefWidth="665.0">
+               <children>
+                  <Button layoutX="638.0" layoutY="21.0" mnemonicParsing="false" onAction="#pressedButtonMinusEchange" text="&lt;" />
+                  <Button layoutX="703.0" layoutY="21.0" mnemonicParsing="false" onAction="#pressedButtonPlusEchange" text="&gt;" />
+                  <Label fx:id="pageNumber1" layoutX="680.0" layoutY="25.0" text="1" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane fx:id="modifPage" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="71.0" layoutY="65.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="143.0" text="Ajout Paires" />
+            <Button layoutX="513.0" layoutY="65.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="178.0" text="Interdire des Paires" />
+            <Slider layoutX="373.0" layoutY="178.0" />
+            <Slider layoutX="373.0" layoutY="213.0" />
+            <Slider layoutX="373.0" layoutY="254.0" />
+            <Slider layoutX="373.0" layoutY="291.0" />
+            <Slider layoutX="373.0" layoutY="330.0" />
+            <Button layoutX="292.0" layoutY="65.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="162.0" text="Supprimer les Paires" />
+            <Button layoutX="66.0" layoutY="408.0" mnemonicParsing="false" onAction="#buttonRetour" prefHeight="43.0" prefWidth="105.0" text="Retour" />
+            <Button layoutX="513.0" layoutY="408.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="200.0" text="Appliquer et Sauvegarder" />
+            <Label layoutX="256.0" layoutY="178.0" text="critères 1" />
+            <Label layoutX="256.0" layoutY="213.0" text="critères 2" />
+            <Label layoutX="256.0" layoutY="254.0" text="critères 3" />
+            <Label layoutX="256.0" layoutY="291.0" text="critères 4" />
+            <Label layoutX="256.0" layoutY="330.0" text="critères 5" />
+            <Label layoutX="205.0" layoutY="122.0" prefHeight="33.0" prefWidth="337.0" text="Ajuster la ponderation des critères">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="home" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffdca6" height="155.0" layoutX="39.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" width="669.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0e1ff" height="155.0" layoutX="39.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="669.0" />
+            <ListView fx:id="listHistoAccueil" layoutX="50.0" layoutY="293.0" prefHeight="98.0" prefWidth="646.0" />
+            <Label layoutX="38.0" layoutY="24.0" prefHeight="52.0" prefWidth="111.0" text="Accueil">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Button ellipsisString="" layoutX="580.0" layoutY="214.0" mnemonicParsing="false" onAction="#buttonEnCours" text="Échanges en Cours" />
+            <Button layoutX="596.0" layoutY="399.0" mnemonicParsing="false" onAction="#buttonHisto" text="Voir l'historique" />
+            <ListView fx:id="listEnCoursAccueil" layoutX="50.0" layoutY="108.0" prefHeight="98.0" prefWidth="646.0" />
+            <Button layoutX="616.0" layoutY="14.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="116.0" text="Importer un fichier" />
+         </children>
+      </Pane>
+   </children>
+</StackPane>

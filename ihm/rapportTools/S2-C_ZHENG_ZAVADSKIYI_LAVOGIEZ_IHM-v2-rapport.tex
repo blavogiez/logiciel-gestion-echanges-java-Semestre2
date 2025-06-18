@@ -1,0 +1,257 @@
+\documentclass{mytex}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{babel}
+\usepackage{tcolorbox}
+\usepackage{uml} % Ce package permet des diagrammes UML simples
+\tcbuselibrary{skins, listings}
+\newtcblisting{codebox}{
+  enhanced, 
+  colback=black!3!white, 
+  toprule=1pt, 
+  bottomrule=1pt,
+  leftrule=0pt, 
+  rightrule=0pt, 
+  arc=0mm, 
+  attach boxed title to top left={yshift=-9pt, xshift=4pt},
+  title = Java,
+  coltitle= black, 
+  boxed title style={colback=white},
+  listing only,
+  listing options={
+	language=java,
+	breaklines,
+	keywordstyle = \color{green!60!black},
+	keywordstyle = {[2]\color{orange}},
+	commentstyle = \color{gray}\itshape,
+	stringstyle  = \color{blue},
+	showstringspaces=false,
+	numbers = left,
+	numberstyle = \tiny,
+	stepnumber=1,
+	numbersep = 20pt
+  },
+}
+% pour les accents
+\lstset{
+	literate=
+		{é}{{\'e}}1
+		{è}{{\`{e}}}1
+		{ê}{{\^{e}}}1
+		{ë}{{\¨{e}}}1
+		{É}{{\'{E}}}1
+		{Ê}{{\^{E}}}1
+		{û}{{\^{u}}}1
+		{ù}{{\`{u}}}1
+		{â}{{\^{a}}}1
+		{à}{{\`{a}}}1
+		{Â}{{\^{A}}}1
+		{ç}{{\c{c}}}1
+		{Ç}{{\c{C}}}1
+		{ô}{{\^{o}}}1
+		{Ô}{{\^{O}}}1
+		{î}{{\^{i}}}1
+		{Î}{{\^{I}}}1,
+}
+
+\title{Rapport ECL - Template} %Titre du fichier
+
+\begin{document}
+
+
+
+%----------- Informations du rapport ---------
+
+\titre{Interaction Humain-Machine} %Titre du fichier .pdf
+\UE{SAÉ S2.01-02} %Nom de la UE
+\sujet{Programmation IHM} %Nom du sujet
+
+\enseignant{Géry \textsc{Casiez} \\ Jean-Marie \textsc{Place}} %Nom de l'enseignant
+
+\eleves{Baptiste \textsc{Lavogiez} \\
+		Mark \textsc{Zavadskiyi} \\ 
+		Angèl \textsc{Zheng}} %Nom des élèves
+
+%----------- Initialisation -------------------
+        
+\fairemarges %Afficher les marges
+\fairepagedegarde %Créer la page de garde
+\tabledematieres %Créer la table de matières
+
+%------------ Corps du rapport ----------------
+
+
+Ce rapport présentera la partie \textbf{Interaction Humain-Machine} de la SAÉ S2.01-02. Elle traitera d'une interface appliquée à ce qui aura été développé dans la partie Programmation (solution d'appariement entre personnes de différents pays).
+
+\section{Rendu 1}
+
+Ce premier rendu traitera du maquettage et de la conception d'un prototype basse fidélité.
+
+\subsection{Réflexion}
+
+Après avoir bien avancé dans une partie plus algorithmique du problème, nous pouvons alors réfléchir à comment représenter à la fois l'interaction avec le programme, mais aussi les résultats.
+
+Nous voulons, pour répondre au cahier des charges :
+
+\begin{itemize}
+	\item Afficher les échanges en cours (dont la date de fin n'est pas encore arrivée et la date de début passée)
+	\item Afficher ces échanges par pays visiteur-hôte (exemple : Italie -> Serbie, et une autre page pour Croatie -> Suisse)
+	\item Afficher l'historique des échanges
+	\item Pouvoir afficher plus de détails en cliquant sur une flèche à côté de l'échange (entre 2 personnes)
+\end{itemize}
+
+Ensuite, dans un sens de paramétrage plus que de visualisation, nous voulons :
+
+\begin{itemize}
+	\item Pouvoir ajuster l'importance donnée aux critères avec un Slider par exemple
+	\item Pouvoir ajouter une affectation arbitraire (exemple : Francesco est cousin avec Vucic, donc ils sont d'office choisis)
+	\item Pouvoir rendre une personne indisponible (exemple : Francesco s'est cassé la jambe, donc Vucic est libre pour un autre échange)
+	\item Après modification des paramètres ci-dessus, un bouton permet de recalculer tous les échanges.
+\end{itemize}
+
+\subsection{Maquettage}
+
+\href{https://www.figma.com/design/2Noh9uxhnhdc1NaLDf3kzv/S2.01?m=auto&t=Z172zrYuezvwgMeP-1}{Lien vers la maquette}
+
+Mot de passe : \textbf{\textit{toto}}
+
+Il est à noter qu'en mode prototype, tous les boutons sont cliquables.
+Cette maquette fait donc office de version fictive de notre projet et nous pouvons y naviguer.
+
+
+\insererfigure{img/version1/figma.png}{12cm}{Aperçu global}{img::v1:figma}
+
+\subsection{Remarques}
+
+Nous avons décidé d'une représentation minimaliste mais comprenant tous les éléments nécessaires. 
+Nos objectifs s'inscrivent dans la continuité des paradigmes de conception vus en cours :
+
+\begin{itemize}
+	\item Pas de surcharge d'éléments
+	\item Nommage clair des fonctions
+	\item Accessibilité rapide (loi de Fitts)
+\end{itemize}
+
+\tsec{Attribution de couleurs}
+
+\insererfigure{img/version1/ponderation.png}{12cm}{Page dédiée au paramétrage}{img::v1:ponderation}
+
+Sur cette page, les couleurs sont assez distinctes, avec le bouton \textbf{Supprimer} coloré d'un rouge très foncé afin de souligner son importance.
+
+\tsec{Exemple d'un échange}
+\insererfigure{img/version1/echange.png}{6cm}{Représentation d'un échange}{img::v1:echange}
+
+\tsec{Critiques}
+
+Comme dans plus ou moins toute interface graphique, nous pouvons retenir du bon ainsi que du mauvais, et c'est normal !
+
+Ici, nous pouvons noter l'absence d'icones et le recours un peu excessif au texte.
+
+Il conviendra plus tard d'utiliser des icônes (par exemple un drapeau) afin d'améliorer le "temps de compréhension" nécessaire à l'utilisateur pour comprendre à quoi il fait face.
+
+\subsection{Implémentation}
+
+Après plusieurs tests sur \textit{SceneBuilder}, nous avons pris en main les éléments nécessaires à l'implémentation future de cette maquette. L'implémentation sera, elle, traitée après ce premier rendu, ayant pour objectif principal d'établir les bases de notre conception de l'interface au problème.
+
+\section{Rendu 2}
+
+Ce rendu traite de nos choix en matière d'ergonomie et d'utilisation de notre application. Commençons d'abord par imager notre application.
+
+\subsection{Aperçu de l'application (shots)}
+
+\insererfigure{img/version2/t0.png}{5cm}{Lancement automatique du JAR}{fig::v2::t0}
+
+\insererfigure{img/version2/t1.png}{5cm}{Page d'accueil}{fig::v2::t1}
+
+\insererfigure{img/version2/t2.png}{5cm}{Sélection d'une visite}{fig::v2::t2}
+
+\insererfigure{img/version2/t3.png}{8cm}{Aperçu des meilleures affectations}{fig::v2::t3}
+
+\insererfigure{img/version2/t4.png}{5cm}{Bannissement d'un échange}{fig::v2::t4}
+
+\insererfigure{img/version2/t5.png}{8cm}{Disparition de l'échange banni et remplacement trouvé}{fig::v2::t5}
+
+\insererfigure{img/version2/t6.png}{8cm}{Visualisation de tous les échanges possibles}{fig::v2::t6}
+
+\insererfigure{img/version2/t7.png}{8cm}{Sélection d'un échange arbitraire pour le rendre obligatoire}{fig::v2::t7}
+
+\insererfigure{img/version2/t8.png}{8cm}{Après rechargement, l'échange apparaît}{fig::v2::t8}
+
+Cette séquence d'utilisation correspond donc à ce qui était attendu de ce logiciel.
+
+\subsection{Les choix d'ergonomie}
+
+\tsec{Réflexion}
+
+Notre priorité ergonomique découle du contexte même du projet : il s'agit d'une application facilitant les échanges entre adolescents, destinée à être utilisée principalement par des enseignants, qui ne sont pas nécessairement experts en outils numériques. Il est donc essentiel de proposer une interface accessible, intuitive et rassurante.
+
+Nous avons ainsi guidé nos choix en tenant compte des principes clés d’ergonomie reconnus, afin de limiter la charge cognitive, d’assurer une navigation fluide et de prévenir les erreurs. Voici les axes majeurs que nous avons suivis :
+
+\begin{itemize}
+	\item Clarté des libellés : les boutons et menus sont nommés de façon explicite, en accord avec le langage des utilisateurs (heuristique Nielsen n°2).
+	\item Organisation visuelle cohérente : les éléments sont regroupés selon leur fonction, en s’appuyant sur les lois de proximité et de similarité (Gestalt) pour renforcer la lisibilité.
+	\item Simplicité de l’interface : nous évitons la surcharge d'informations (loi de Hick-Hyman) et priorisons les informations essentielles (critère Bastien \& Scapin : charge de travail).
+	\item Accessibilité des actions : les boutons sont dimensionnés et placés de manière à être atteints facilement, selon la loi de Fitts.
+	\item Guidage clair et aide disponible : des messages contextuels et un manuel d’aide accompagnent l’utilisateur en cas de difficulté (critère : guidage, heuristique : aide et documentation).
+	\item Rapidité d’usage : des éléments interactifs tels que des sliders permettent des modifications rapides et visuelles, favorisant l’efficacité.
+	\item Flexibilité d’usage : l’interface s’adapte aux besoins variés, en proposant des options claires tout en laissant de la liberté (règle d’or de Coutaz : souplesse d’utilisation).
+\end{itemize}
+
+En résumé, notre interface vise à être simple, cohérente et pédagogique. Elle accompagne l’utilisateur tout au long de sa navigation, en anticipant les incompréhensions et en limitant les frustrations.
+
+Naturellement, toute solution comporte des compromis. Certaines préférences individuelles ou usages spécifiques pourraient ne pas être pleinement couverts. C’est pourquoi nous restons attentifs aux retours utilisateurs, afin d’améliorer continuellement l’expérience.
+
+\tsec{Les éléments pratiques de notre application}
+
+Les principes d’ergonomie que nous avons identifiés en amont se traduisent concrètement dans les choix de conception de notre application \textit{SchoolBuilder}. Voici comment ces réflexions se sont incarnées dans l’interface et dans les parcours utilisateurs.
+
+\begin{itemize}
+	\item \textbf{Écran principal synthétique :} dès l’ouverture, l’utilisateur accède à une vue d’ensemble des échanges existants. Chaque ligne est identifiable par un intitulé clair (pays, année), ce qui permet une compréhension immédiate sans surcharge visuelle. Cela applique la loi de Hick-Hyman, en réduisant le nombre de décisions à prendre à chaque étape.
+	
+	\item \textbf{Hiérarchisation visuelle :} les données importantes (pays, année, direction de l’échange) sont mises en avant par la taille de police, le contraste ou leur position. Cette structuration visuelle renforce la lisibilité et permet une navigation plus efficace, notamment pour des utilisateurs peu à l’aise avec des interfaces complexes.
+	
+	\item \textbf{Interactivité maîtrisée :} les éléments cliquables (boutons, liens, menus déroulants) sont visuellement identifiables. Par exemple, le bouton "Voir les échanges possibles" est clairement distinct, ce qui répond à la nécessité de guidage et de prévention des erreurs (heuristique de Nielsen n°5).
+	
+	\item \textbf{Détails sur demande :} l’utilisateur peut choisir de voir les correspondances détaillées, avec un affichage des affinités et des critères non respectés. Ces informations ne sont pas surchargées sur l’écran principal mais accessibles progressivement, ce qui respecte le principe de dévoilement progressif (progressive disclosure).
+	
+	\item \textbf{Fonctions de contrôle explicites :} des options comme "Bannir l’échange" ou "Rendre obligatoire" sont disponibles directement pour chaque proposition. Leur formulation est sans ambiguïté, ce qui réduit le risque de mauvaise manipulation. Leur mise en évidence visuelle permet un accès rapide, en conformité avec la loi de Fitts.
+	
+	\item \textbf{Feedback immédiat :} après chaque modification, un rechargement permet de voir instantanément les nouveaux appariements. Ce retour direct sur l’action renforce le sentiment de contrôle et d’efficacité pour l’utilisateur (critère Bastien \& Scapin : contrôle explicite).
+\end{itemize}
+
+\tsec{Critiques}
+
+Cependant, malgré ces points forts, certains aspects restent perfectibles :
+
+\begin{itemize}
+	\item \textbf{Uniformité visuelle parfois insuffisante :} les styles graphiques (icônes, alignements, marges) pourraient être harmonisés davantage pour éviter une impression d’interface brute ou inachevée.
+	
+	\item \textbf{Manque d’accompagnement initial :} l’utilisateur découvrant l’application pour la première fois pourrait être désorienté. Une aide contextuelle ou un tutoriel de démarrage (par exemple en overlay) renforcerait l’accessibilité pour les nouveaux utilisateurs.
+	
+	\item \textbf{Affichage des critères non respectés encore dense :} la liste des incompatibilités peut apparaître textuelle et peu hiérarchisée. Une mise en forme par icônes, couleurs ou catégories (ex. santé, logistique, préférences personnelles) faciliterait la compréhension immédiate.
+	
+	\item \textbf{Accessibilité technique non traitée :} pour l’instant, l’application ne prend pas en compte des critères d’accessibilité plus larges (navigation clavier, lecteurs d’écran, contrastes élevés, etc.). C’est un point d’amélioration identifié à moyen terme.
+\end{itemize}
+
+Nous avons surtout manqué de temps et avons veillé avant tout à remplir pleinement le cahier des charges, laissant peu de temps à du peaufinage de l'application. L'ergonomie est donc relativement bonne, mais avec plus de temps, elle aurait pu être excellente.
+
+\subsection{Les contributions de chacun}
+
+Pour ce projet, nous avons su tirer le meilleur de nos compétences et expériences respectives afin de bien avancer sur l’interface. \\
+
+\textbf{Angèl} s’est occupé du cœur de l’IHM, en développant la structure principale de l’interface. Il a travaillé avec rigueur sur la mise en forme, la navigation entre les différents écrans et la gestion des interactions utilisateur. Son travail a rendu l’application fluide, intuitive et agréable à utiliser, ce qui est essentiel pour répondre aux besoins des utilisateurs finaux. \\
+
+\textbf{Mark} a surtout réfléchi à l’architecture globale du code, en veillant à sa cohérence et à sa robustesse. Il a pris en charge les nombreux tests de l’interface pour s’assurer que toutes les fonctionnalités soient bien opérationnelles et que l’expérience utilisateur soit sans accrocs. Par ailleurs, grâce à sa bonne maîtrise du projet, il a traduit l’ensemble du code en anglais. Cette étape a non seulement facilité la collaboration entre nous, mais elle nous ouvre aussi la porte à une meilleure visibilité dans notre portfolio professionnel, en rendant notre travail accessible à un public plus large. \\
+
+\textbf{Baptiste}, qui avait principalement réalisé la partie programmation orientée objet avant la partie IHM, a adapté le code existant pour répondre précisément aux besoins spécifiques de l’interface, comme la gestion du bannissement d’échanges ou l’affectation obligatoire. Il a fait le lien essentiel entre la logique métier et l’IHM, en modifiant et enrichissant le code en arrière-plan pour garantir que tout fonctionne parfaitement ensemble, assurant ainsi une cohésion technique solide. \\
+
+Cette répartition des tâches, fondée sur nos points forts respectifs, nous a permis de progresser efficacement. En combinant réflexion approfondie, développement technique et adaptation précise, chacun a pu apporter sa force au moment opportun, pour construire une interface cohérente, fonctionnelle et adaptée aux attentes du projet.
+
+
+
+\subsection{Vidéo explicative}
+
+Une vidéo explicative commentée est disponible dans le répertoire sous-jaçent.
+
+\end{document}
+

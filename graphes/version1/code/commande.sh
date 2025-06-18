@@ -1,0 +1,1 @@
+java -jar calcul-affectation.jar scores_affinite.csv

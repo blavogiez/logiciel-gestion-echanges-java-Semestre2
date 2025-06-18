@@ -1,0 +1,9 @@
+Revision isMatched en terme de map
+UpdateLocalHistory dans constructeur peoplemanager
+Firstwillvisit second avec date
+Date révisée en int year (complexité inutile)
+
+j'ai trouvé : en fait, je dois vérifier si l'échange courant n'est pas actuellement contenu dans l'historique. Si je l'ajoute et qu'il est dans l'historique, ca deconne
+year dans exchange
+
+History marche parfaitement ; il est impossible qu'un échange soit ajouté si il a été présent dans l'historique.

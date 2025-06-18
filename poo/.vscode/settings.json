@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "/home/infoetu/baptiste.lavogiez.etu/BUT1/Semestre2/SAé/SAE201-202/graphes/version3/code/calcul-affectation.jar",
+        "/home/infoetu/baptiste.lavogiez.etu/BUT1/Semestre2/SAé/SAE201-202/poo/lib/junit-platform-console-standalone-1.10.2.jar",
+        "lib/junit-platform-console-standalone-1.10.2.jar"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}

@@ -1,0 +1,6 @@
+FORENAME,NAME,COUNTRY_OF_ORIGIN,BIRTH_DATE,GUEST_ANIMAL_ALLERGY,HOST_HAS_ANIMAL,GUEST_FOOD_CONSTRAINT,HOST_FOOD,HOBBIES,GENDER,PAIR_GENDER,HISTORY
+Khargol,Maalik,GERMANY,2008-01-22,no,yes,nonuts,nonuts;vegetarian,culture;sports;reading,female,female,same
+Adonia,Digby,FRANCE,2007-02-15,yes,no,,,,"other",female,
+Bellatrix,Castel,ITALY,2007-11-02,no,yes,vegetarian,vegetarian,science;reading,female,,other
+Argob,Khijazy,SPAIN,2007-07-07,no,no,,nonuts,reading;technology,male,,same
+

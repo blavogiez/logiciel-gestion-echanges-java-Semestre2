@@ -1,0 +1,4 @@
+<config>
+    <refuseAnimalAllergy>true</refuseAnimalAllergy>
+    <minAge>15</minAge>
+</config>

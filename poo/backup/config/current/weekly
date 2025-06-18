@@ -1,0 +1,34 @@
+L’interface de l’application utilisera un cahier des charges plus restreint que celui présenté au début du
+sujet. Elle se concentrera sur les adolescents de deux pays et elle devra permettre de réaliser les opérations
+suivantes :
+
+1. visualiser l’ensemble des appariements,
+2. visualiser les détails sur un appariement (noms, prénoms des adolescents et informations associées),
+3. visualiser les contraintes rédhibitoires qui ne sont pas respectées (par échange),
+4. ajuster les pondérations des différents critères, (avec bouton)
+5. fixer au préalable des affectations, ARBITRAIRE
+6. éviter d’affecter des adolescents. ARBITRAIRE (rédhibitoire)
+
+L’application sera développée en utilisant JavaFX. Il doit par exemple être possible de gérer la situation
+suivante : un adolescent s’est désisté et il faut trouver un nouveau correspondant qui réponde le mieux
+aux critères, en conservant les adolescents déjà affectés.
+
+1 année, groupe de sorties
+
+hotes   visiteurs
+France Franck   Allemagne Heinz
+France Angel    Allemagne Gustr
+France Kevin    Italie Machin
+Italie Giuseppe     Serbie Jurk
+Allemagne Franz     France Gustave
+
+
+Semaines 7 (du 2/06) et 8 (du 9/06)
+— [poo]prétraitement des critères des adolescents sur demande
+— [poo]prétraitement automatique des critères en cas d’existence d’un fichier de configuration à un
+emplacement prédéfini
+— [ihm]prototype haute fidélité
+— [ihm]développement en JavaFX
+⇒ commits étiquetés POO-v4 IHM-v2 à rendre la semaine du 9 juin, à une date qui sera précisée
+ultérieurement.
+

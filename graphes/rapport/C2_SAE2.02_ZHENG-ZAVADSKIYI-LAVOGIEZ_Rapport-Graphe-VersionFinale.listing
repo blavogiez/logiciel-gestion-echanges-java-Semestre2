@@ -1,0 +1,30 @@
+score_affinité_3(hôte, visiteur):
+
+    score = 10
+    si (un animal dans hôte.has_animals est dans visiteur.animal_allergy) score+= 10
+    si (un aliment dans hôte.host_food est dans visiteur.food_constraint) score+= 10
+    si (hote.history == "other" et visiteur.nom est dans hote.past_people) score+= 10
+    si (visiteur.history == "other" et hote.nom est dans visiteur.past_people) score+= 10
+
+    hote.age=dateaujourdhui-hote.naiss
+    visiteur.age=dateaujourdhui-visiteur.naiss
+
+    diff = valeurabsolue(hôte.naiss - visiteur.naiss)
+    age_moyen = (hote.age + visiteur.age) / 2
+
+    si diff <= 18 mois
+        score += (diff / 12) * 0.9**age_moyen
+	    score = score * 0.9
+    sinon
+        score += ((diff / 12) * 0.9**age_moyen)
+	    score = score * 1.5
+
+    si ((visiteur.pair_gender existe) et (si hôte.gender != visiteur.pair_gender))
+	        score = score * 1.5
+    si ((hote.pair_gender existe) et (si visiteur.gender != hôte.pair_gender))
+	        score = score * 1.5
+
+    N = nombre_hobbies_en_commun(hôte, visiteur)
+        score = score * 0.85**N
+
+    retourner arrondi(score, 2)

@@ -1,0 +1,9 @@
+Semaines 5 (du 19/05) et 6 (du 26/05)
+— [poo]import par fichier de format csv, répondant à la structure donnée
+— [poo]export d’un résultat sous format csv
+— [poo]gestion de l’historique par sérialisation binaire
+— [poo]implémentation d’un jeu de données montant le bon fonctionnement du nouveau système
+d’affectation
+— [ihm]maquettage et prototype basse fidélité
+⇒ commits étiquetés POO-v3 GRAPHE-v2 IHM-v1, à faire au plus tard une journée avant la séance
+suivante de SAÉ (la semaine du 29/05/2023).
