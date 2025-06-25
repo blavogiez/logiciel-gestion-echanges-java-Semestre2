@@ -5,11 +5,11 @@
 \usepackage{tcolorbox}
 \usepackage{uml} % Ce package permet des diagrammes UML simples
 \tcbuselibrary{skins, listings}
-\newtcblisting{codebox}{
+\newtcblisting{codebox}{   
 	enhanced, 
 	colback=black!3!white, 
 	toprule=1pt, 
-	bottomrule=1pt,
+	bottomrule=1pt, 
 	leftrule=0pt, 
 	rightrule=0pt, 
 	arc=0mm, 
@@ -111,6 +111,8 @@ Le code est facilement compréhensible avec des noms explicites.
 Criteria est une énumération simple de critères associés à un type représenté sous forme de caractère.
 
 Cette énumération est utilisée dans criteriaValues, la Map de la classe Person. Elle y sera associée à une valeur représentée en chaîne de caractères pour simplifier la modélisation. Dans Person, les méthodes adéquates permettent de manipuler ces critères (ajout, obtention, conversion en texte...).
+
+Dans cette Map, chaque clef correspond à un critère et sa valeur représente son résultat. De plus, les méthodes de la classe Person permettent d'accéder aux critères d'une personne.
 
 \tsec{Person ou Student ?}
 
@@ -304,7 +306,7 @@ public static boolean isCriteriaTypeValid(Criteria criteria, String value) {
 }
 \end{codebox}
 
-Cette méthode sera appelée, en complément de la suivante, à chaque nouvel ajout de critère. Si les méthodes ne sont pas satisfaites, l'ajout échoue.
+Cette méthode sera appelée, en complément de la suivante, à chaque nouvel ajout de critère. Si les méthodes ne sont pas satisfaites, l'ajout échoue et une exception est lancée pour signaler que le critère n'est pas valide.
 
 \tsec{La méthode \texttt{static isCriteriaValueValid}}
 
@@ -357,6 +359,8 @@ public static boolean areCriteriasValid(Map<Criteria, String> criterias) {
 \end{codebox}
 
 Cette méthode est appelée dans le constructeur prenant en entrée une la \texttt{Map} des critères de la \texttt{Person}.
+
+Les critères fournis sont valides et ont été vérifiés lors de l'instanciation de la classe Person.
 	
 \subsection{Modifications de \texttt{Exchange}}
 
@@ -1642,6 +1646,7 @@ Notre programme répond aux demandes de ce rendu, mais il se peut qu'il ait des 
 
 Ces deux semaines de réalisation seront assez maigres mais importantes : il s'agira ici de peaufiner les résultats et d'éliminer certaines incohérences remarquées.
 
+
 \subsection{Attentes}
 
 Au programme, nous avons :
@@ -2084,7 +2089,179 @@ Certains concepts nous ont été introduits sur le tas (sérialisation, scanner)
 
 \textbf{Notre projet n'est donc pas parfait mais nous considérons qu'il est bien documenté, bien écrit, et qu'il répond pleinement aux demandes logiques formulées.}
 
+\section{Rendu 5}
+
+These memory leaks honestly
+
+Title: Identifying and Resolving Memory Leaks in Your Code
+
+In the realm of software development, memory leaks can be a silent killer. They occur when a computer allocates memory for data but the data's owner does not properly release or deallocate that memory upon completion, thus causing the memory to accumulate and eventually exhaust system resources. In this article, we will explore some strategies for identifying and resolving memory leaks in your code.
+
+1. **Understanding Memory Leaks**
+   Before diving into solutions, let's first understand the types of memory leaks:
+   - Stack leaks: These occur when a function calls itself recursively without releasing its stack frame, causing a stack overflow.
+   - Heap leaks: These occur when dynamic memory allocated on the heap is not properly deallocated, leading to the accumulation of unused memory.
+   - Global leaks: These occur when statically allocated variables or global variables are no longer needed but not properly deallocated, causing them to persist throughout the application's lifetime.
+
+2. **Tools for Identifying Memory Leaks**
+   To aid in detecting memory leaks, several tools and techniques can be employed:
+   - Profilers: Tools like Valgrind (for C/C++), Visual Studio's Debugging Tools (for C++), or the Java VisualVM (for Java) provide comprehensive memory leak detection capabilities.
+   - Manual testing: Sometimes, manually running your application with specific input scenarios and monitoring its memory usage can help identify potential memory leaks.
+
+3. **Preventing Memory Leaks**
+   To prevent memory leaks from occurring, follow these best practices:
+   - Always deallocate dynamically allocated memory when it is no longer needed using `free()` for C/C++ or the corresponding functions in other languages.
+   - Avoid global variables that persist throughout the application's lifetime if possible. Instead, use local variables and pass them as function arguments to ensure they are properly managed.
+   - Use smart pointers (for C++) or garbage collection (for Java) to handle memory automatically.
+
+4. **Conclusion**
+   Memory leaks can cause severe performance issues and even application crashes, so it is essential to identify and address them promptly. By understanding the types of memory leaks, employing tools for detection, following best practices, and staying vigilant during development, you can ensure your code remains clean and efficient. Happy coding!
+
+Anyway, we all love that
+
+\section{Rendu 6}
+
+That is what we all love honestly.
+
+Dans tout cela, on adore manger.
+
+On oublie tout et tout va bien !
+
+Voici le rendu que j'ai préparé :
+
+Title : [Your Title Here]
+
+[Your Introduction or Summary Here]
+
+1. Chapter One: [Chapter Title Here]
+
+   As the sun began to set, casting long shadows across the vast plains, a lone figure approached the small village that lay nestled between the rolling hills. The villagers had lived in peace for many years, but they could sense something was amiss - an unsettling feeling that seemed to hang heavy in the air.
+
+   [Describe the events or actions that take place in this chapter]
+
+2. Chapter Two: [Chapter Title Here]
+
+   The following day, a group of strangers arrived at the village gates, seeking refuge from the impending storm. Among them was a woman who spoke of strange dreams and visions that foretold great danger. As the days passed, it became clear that these strangers were not what they seemed, and the villagers found themselves facing an enemy unlike any they had ever known.
+
+   [Describe the events or actions that take place in this chapter]
+
+3. Chapter Three: [Chapter Title Here]
+
+   As the battle raged on, a young warrior rose among the ranks of the village defenders. With strength and skill beyond his years, he fought valiantly against their foes. But even as he struck down enemies left and right, he could not shake the feeling that there was something more to this conflict than met the eye.
+
+   [Describe the events or actions that take place in this chapter]
+
+4. Chapter Four: [Chapter Title Here]
+
+   In a moment of weakness, the young warrior sought out the woman with the strange dreams and visions. Together they delved into the depths of her mind, seeking answers to questions that had long plagued them both. And as they uncovered secrets long buried, they found themselves drawn ever deeper into a mystery that threatened not only their village but the entire world.
+
+   [Describe the events or actions that take place in this chapter]
+
+5. Chapter Five: [Chapter Title Here]
+
+   As the final battle loomed on the horizon, the young warrior and his allies prepared to make their stand against an enemy that sought to bring darkness and despair to all corners of the world. But as they stood at the edge of the abyss, they could not help but wonder: would their efforts be enough?
+
+   [Describe the events or actions that take place in this chapter]
+
+Epilogue: [Your Epilogue Here]
+
+In the end, the young warrior and his allies emerged victorious, having saved their village and the world from the clutches of darkness. But as they looked out upon the sunlit plains, they knew that the world was a vast and ever-changing place - and there would always be new threats to face, new adventures to embark upon.
+
+[Your Closing Remarks or Call to Action Here]
+
+When this usually happens, the best is not to do anything.
+
+As long as it's okay, we better keep it quiet.
+
+
+
+
+\subsection{Le nouveau rendu !}
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/Rendu_5/Le_nouveau_rendu_/default/fig4.png}
+    \caption{Caption here}
+    \label{fig:Rendu_5_Le_nouveau_rendu__4}
+\end{figure}
+
+\begin{itemize}
+	\item
+	\item
+\end{itemize}
+
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/Rendu_5/Le_nouveau_rendu_/default/fig1.png}
+    \caption{Caption here}
+    \label{fig:Rendu_5_Le_nouveau_rendu__1}
+\end{figure}
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/Rendu_5/Le_nouveau_rendu_/default/fig2.png}
+    \caption{Caption here}
+    \label{fig:Rendu_5_Le_nouveau_rendu__2}
+\end{figure}
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/Rendu_5/Le_nouveau_rendu_/default/fig3.png}
+    \caption{Caption here}
+    \label{fig:Rendu_5_Le_nouveau_rendu__3}
+\end{figure}
+
 \merci
 
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

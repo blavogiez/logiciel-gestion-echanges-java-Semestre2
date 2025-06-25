@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.18)  13 JUN 2025 11:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.18)  22 JUN 2025 18:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1385,12 +1385,12 @@ Package hyperref Info: Link coloring OFF on input line 61.
 
 Package nomencl Info: Writing nomenclature file S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_
 POO-v4-rapport.nlo on input line 79.
-<logos/logo.png, id=190, 1204.5pt x 232.87pt>
+<logos/logo.png, id=198, 1204.5pt x 232.87pt>
 File: logos/logo.png Graphic file (type png)
 <use logos/logo.png>
 Package pdftex.def Info: logos/logo.png  used on input line 80.
 (pdftex.def)             Requested size: 364.19667pt x 70.4123pt.
-<logos/folded.png, id=192, 867.24pt x 601.24625pt>
+<logos/folded.png, id=200, 867.24pt x 601.24625pt>
 File: logos/folded.png Graphic file (type png)
 <use logos/folded.png>
 Package pdftex.def Info: logos/folded.png  used on input line 80.
@@ -1430,7 +1430,7 @@ LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
 \tf@toc=\write7
 \openout7 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.toc'.
 
-<logos/logo_ECL.jpg, id=243, 1204.5pt x 232.87pt>
+<logos/logo_ECL.jpg, id=253, 1204.5pt x 232.87pt>
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
 Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 81.
@@ -1450,7 +1450,7 @@ File: logos/logo_ECL.jpg Graphic file (type jpg)
 Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 88.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [2]
-<img/uml_v1.png, id=258, 486.01575pt x 386.04225pt>
+<img/uml_v1.png, id=268, 486.01575pt x 386.04225pt>
 File: img/uml_v1.png Graphic file (type png)
 <use img/uml_v1.png>
 Package pdftex.def Info: img/uml_v1.png  used on input line 102.
@@ -1472,7 +1472,7 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 157.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 159.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [4]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1481,30 +1481,30 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 157.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 194.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 196.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [5]
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 195.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 197.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [6]
-<img/uml_v2.png, id=342, 273.4215pt x 334.851pt>
+<img/uml_v2.png, id=352, 273.4215pt x 334.851pt>
 File: img/uml_v2.png Graphic file (type png)
 <use img/uml_v2.png>
-Package pdftex.def Info: img/uml_v2.png  used on input line 234.
+Package pdftex.def Info: img/uml_v2.png  used on input line 236.
 (pdftex.def)             Requested size: 255.56433pt x 312.9803pt.
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 235.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 237.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [7
 
 ]
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 14.4pt on input line 236.
+(Font)              scaled to size 14.4pt on input line 238.
 
-Overfull \hbox (67.29834pt too wide) in paragraph at lines 238--239
+Overfull \hbox (67.29834pt too wide) in paragraph at lines 240--241
 []\T1/cmr/m/n/12 Pour ce faire, nous avons pro-cédé à l'im-plé-men-ta-tion d'un
 e mé-thode \T1/zi4/m/n/12 meetingSpecificCountryRules
  []
@@ -1514,7 +1514,7 @@ e mé-thode \T1/zi4/m/n/12 meetingSpecificCountryRules
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 256.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 258.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [8 <./img/uml_v2.png>]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1522,14 +1522,14 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 256.
 
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 12.0pt on input line 280.
+(Font)              scaled to size 12.0pt on input line 282.
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
 
 
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 306.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 308.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [9]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1538,7 +1538,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 306.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 327.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 329.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [10]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1547,7 +1547,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 327.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 358.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 360.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [11]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1556,7 +1556,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 358.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 380.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 384.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [12]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1569,51 +1569,51 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 380.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 436.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 440.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [13]
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 437.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 441.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [14]
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 484.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 488.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [15
 
 ]
-<img/version3/uml.png, id=535, 456.20438pt x 986.18437pt>
+<img/version3/uml.png, id=545, 456.20438pt x 986.18437pt>
 File: img/version3/uml.png Graphic file (type png)
 <use img/version3/uml.png>
-Package pdftex.def Info: img/version3/uml.png  used on input line 493.
+Package pdftex.def Info: img/version3/uml.png  used on input line 497.
 (pdftex.def)             Requested size: 289.58214pt x 625.96062pt.
-File: logos/logo_ECL.jpg Graphic file (type jpg)
-<use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 494.
-(pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
- [16]
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
 Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 498.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
+ [16]
+File: logos/logo_ECL.jpg Graphic file (type jpg)
+<use logos/logo_ECL.jpg>
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 502.
+(pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
 
 [17 <./img/version3/uml.png>]
-<img/version3/arbo.png, id=546, 845.40843pt x 185.94469pt>
+<img/version3/arbo.png, id=556, 845.40843pt x 185.94469pt>
 File: img/version3/arbo.png Graphic file (type png)
 <use img/version3/arbo.png>
-Package pdftex.def Info: img/version3/arbo.png  used on input line 505.
+Package pdftex.def Info: img/version3/arbo.png  used on input line 509.
 (pdftex.def)             Requested size: 388.0928pt x 85.35826pt.
-<img/version3/apercufichier.png, id=547, 913.91437pt x 499.8675pt>
+<img/version3/apercufichier.png, id=557, 913.91437pt x 499.8675pt>
 File: img/version3/apercufichier.png Graphic file (type png)
 <use img/version3/apercufichier.png>
-Package pdftex.def Info: img/version3/apercufichier.png  used on input line 514
+Package pdftex.def Info: img/version3/apercufichier.png  used on input line 518
 .
 (pdftex.def)             Requested size: 416.16637pt x 227.62204pt.
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 520.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 524.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [18 <./img/version3/arbo.png> <./img/version3/apercufichier.png>]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1625,7 +1625,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 520.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 564.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 568.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [19]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1638,16 +1638,16 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 564.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 614.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 618.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [20]
-<img/version3/greedyVsBf.png, id=615, 511.15968pt x 54.2025pt>
+<img/version3/greedyVsBf.png, id=625, 511.15968pt x 54.2025pt>
 File: img/version3/greedyVsBf.png Graphic file (type png)
 <use img/version3/greedyVsBf.png>
-Package pdftex.def Info: img/version3/greedyVsBf.png  used on input line 617.
+Package pdftex.def Info: img/version3/greedyVsBf.png  used on input line 621.
 (pdftex.def)             Requested size: 456.17082pt x 48.36958pt.
 
-Overfull \hbox (0.92671pt too wide) in paragraph at lines 617--617
+Overfull \hbox (0.92671pt too wide) in paragraph at lines 621--621
  [][] 
  []
 
@@ -1656,27 +1656,27 @@ Overfull \hbox (0.92671pt too wide) in paragraph at lines 617--617
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 638.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 642.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [21 <./img/version3/greedyVsBf.png>]
-<img/version3/nocleaning.png, id=636, 241.65282pt x 218.31563pt>
+<img/version3/nocleaning.png, id=646, 241.65282pt x 218.31563pt>
 File: img/version3/nocleaning.png Graphic file (type png)
 <use img/version3/nocleaning.png>
-Package pdftex.def Info: img/version3/nocleaning.png  used on input line 641.
+Package pdftex.def Info: img/version3/nocleaning.png  used on input line 645.
 (pdftex.def)             Requested size: 251.95459pt x 227.62204pt.
-<img/version3/cleaning.png, id=637, 611.28375pt x 206.27063pt>
+<img/version3/cleaning.png, id=647, 611.28375pt x 206.27063pt>
 File: img/version3/cleaning.png Graphic file (type png)
 <use img/version3/cleaning.png>
-Package pdftex.def Info: img/version3/cleaning.png  used on input line 643.
+Package pdftex.def Info: img/version3/cleaning.png  used on input line 647.
 (pdftex.def)             Requested size: 505.92896pt x 170.71652pt.
 
-Overfull \hbox (50.68484pt too wide) in paragraph at lines 643--643
+Overfull \hbox (50.68484pt too wide) in paragraph at lines 647--647
  [][] 
  []
 
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 644.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 648.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
 [22 <./img/version3/nocleaning.png>]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1685,7 +1685,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 644.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 674.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 678.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [23 <./img/version3/cleaning.png>]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1693,7 +1693,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 674.
  (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 719.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 723.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [24]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1711,12 +1711,12 @@ Overfull \hbox (25.10641pt too wide) in paragraph at lines 5--6
 )
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 780.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 784.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [25]
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 784.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 788.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [26]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1724,12 +1724,12 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 784.
  (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 828.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 832.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [27]
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 832.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 836.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
 
 [28]
@@ -1738,18 +1738,18 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 832.
  (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 879.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 883.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [29]
 Overfull \vbox (59.16885pt too high) has occurred while \output is active []
 
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 879.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 883.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
 
 [30]
-Overfull \hbox (18.7438pt too wide) in paragraph at lines 886--888
+Overfull \hbox (18.7438pt too wide) in paragraph at lines 890--892
 \T1/cmr/m/n/12 par un Peo-ple-Ma-na-ger. Peo-ple-Ma-na-ger dis-pose éga-le-ment
  d'un ob-jet "lo-cal" List<Exchange>
  []
@@ -1759,7 +1759,7 @@ Overfull \hbox (18.7438pt too wide) in paragraph at lines 886--888
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 929.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 933.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [31]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1768,7 +1768,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 929.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 951.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 955.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [32]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1777,17 +1777,17 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 951.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 984.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 988.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [33]
-<img/version3/main.png, id=957, 612.78937pt x 412.54124pt>
+<img/version3/main.png, id=967, 612.78937pt x 412.54124pt>
 File: img/version3/main.png Graphic file (type png)
 <use img/version3/main.png>
-Package pdftex.def Info: img/version3/main.png  used on input line 985.
+Package pdftex.def Info: img/version3/main.png  used on input line 989.
 (pdftex.def)             Requested size: 380.3743pt x 256.0748pt.
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 991.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 995.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [34 <./img/version3/main.png>]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1799,7 +1799,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 991.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1050.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1054.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [35]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1808,7 +1808,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1050.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1072.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1076.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [36]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1821,7 +1821,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1072.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1107.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1111.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [37]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1834,7 +1834,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1107.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1143.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1147.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [38]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1843,14 +1843,14 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1143.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1196.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1200.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [39]
 Overfull \vbox (23.16885pt too high) has occurred while \output is active []
 
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1196.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1200.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
 
 [40]
@@ -1863,7 +1863,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1196.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1267.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1271.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [41]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1872,12 +1872,12 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1267.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1306.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1310.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [42]
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1314.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1318.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [43]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1886,14 +1886,14 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1314.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1361.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1365.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [44]
 Overfull \vbox (35.16885pt too high) has occurred while \output is active []
 
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1361.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1365.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
 
 [45]
@@ -1906,7 +1906,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1361.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1434.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1438.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [46]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1915,7 +1915,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1434.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1491.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1495.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [47]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1924,7 +1924,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1491.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1505.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1509.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [48]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1933,14 +1933,14 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1505.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1559.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1563.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [49]
 Overfull \vbox (23.16885pt too high) has occurred while \output is active []
 
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1559.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1563.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
 
 [50]
@@ -1949,7 +1949,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1559.
  (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1612.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1616.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [51]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -1958,50 +1958,50 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1612.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1636.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1640.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [52]
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1641.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1645.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [53]
-Overfull \hbox (18.99147pt too wide) in paragraph at lines 1660--1661
+Overfull \hbox (18.99147pt too wide) in paragraph at lines 1665--1666
 \T1/cmr/m/n/12 pou-voir don-ner les ins-truc-tions à suivre (par exemple mi-nAg
 e=15, maxAge=20)
  []
 
 
-Overfull \hbox (3.45442pt too wide) in paragraph at lines 1673--1674
+Overfull \hbox (3.45442pt too wide) in paragraph at lines 1678--1679
 []\T1/cmr/m/n/12 Le pré-trai-te-ment au-to-ma-tique, lui, né-ces-si-tera un peu
  plus d'ef-forts ! Il né-ces-site d'abord
  []
 
-<img/version4/xmlApercu.png, id=1584, 487.8225pt x 304.7385pt>
+<img/version4/xmlApercu.png, id=1594, 487.8225pt x 304.7385pt>
 File: img/version4/xmlApercu.png Graphic file (type png)
 <use img/version4/xmlApercu.png>
-Package pdftex.def Info: img/version4/xmlApercu.png  used on input line 1677.
+Package pdftex.def Info: img/version4/xmlApercu.png  used on input line 1682.
 (pdftex.def)             Requested size: 364.37726pt x 227.62204pt.
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1678.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1683.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
 [54
 
 ]
-<img/version4/uml.png, id=1590, 520.344pt x 688.974pt>
+<img/version4/uml.png, id=1600, 520.344pt x 688.974pt>
 File: img/version4/uml.png Graphic file (type png)
 <use img/version4/uml.png>
-Package pdftex.def Info: img/version4/uml.png  used on input line 1696.
+Package pdftex.def Info: img/version4/uml.png  used on input line 1701.
 (pdftex.def)             Requested size: 451.28233pt x 597.50787pt.
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1697.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1702.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [55 <./img/version4/xmlApercu.png>]
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1704.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1709.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [56 <./img/version4/uml.png>]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -2010,7 +2010,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1704.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1756.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1761.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [57]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -2019,7 +2019,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1756.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1794.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1799.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [58]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -2028,7 +2028,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1794.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1823.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1828.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [59]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -2037,7 +2037,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1823.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1847.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1852.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [60]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -2050,7 +2050,7 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1847.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1883.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1888.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [61]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -2059,14 +2059,14 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1883.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1932.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1937.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [62]
 Overfull \vbox (11.16885pt too high) has occurred while \output is active []
 
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1932.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1937.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
 
 [63]
@@ -2079,37 +2079,37 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1932.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 1995.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 2000.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [64]
-<img/version4/t0.png, id=1837, 411.939pt x 142.131pt>
+<img/version4/t0.png, id=1847, 411.939pt x 142.131pt>
 File: img/version4/t0.png Graphic file (type png)
 <use img/version4/t0.png>
-Package pdftex.def Info: img/version4/t0.png  used on input line 2005.
+Package pdftex.def Info: img/version4/t0.png  used on input line 2010.
 (pdftex.def)             Requested size: 412.33397pt x 142.26378pt.
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 2005.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 2010.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [65]
-<img/version4/t1.png, id=1874, 311.9655pt x 176.45924pt>
+<img/version4/t1.png, id=1884, 311.9655pt x 176.45924pt>
 File: img/version4/t1.png Graphic file (type png)
 <use img/version4/t1.png>
-Package pdftex.def Info: img/version4/t1.png  used on input line 2007.
+Package pdftex.def Info: img/version4/t1.png  used on input line 2012.
 (pdftex.def)             Requested size: 251.5149pt x 142.26378pt.
-<img/version4/t2.png, id=1875, 307.74976pt x 155.3805pt>
+<img/version4/t2.png, id=1885, 307.74976pt x 155.3805pt>
 File: img/version4/t2.png Graphic file (type png)
 <use img/version4/t2.png>
-Package pdftex.def Info: img/version4/t2.png  used on input line 2009.
+Package pdftex.def Info: img/version4/t2.png  used on input line 2014.
 (pdftex.def)             Requested size: 281.7761pt x 142.26378pt.
-<img/version4/t3.png, id=1876, 218.0145pt x 118.64325pt>
+<img/version4/t3.png, id=1886, 218.0145pt x 118.64325pt>
 File: img/version4/t3.png Graphic file (type png)
 <use img/version4/t3.png>
-Package pdftex.def Info: img/version4/t3.png  used on input line 2011.
+Package pdftex.def Info: img/version4/t3.png  used on input line 2016.
 (pdftex.def)             Requested size: 261.42311pt x 142.26378pt.
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 2012.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 2017.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [66 <./img/version4/t0.png> <./img/version4/t1.png> <./img/version4/t2.png>]
 \openout8 = `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing'.
@@ -2122,20 +2122,61 @@ Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 2012.
 (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.listing)
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 2072.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 2077.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [67 <./img/version4/t3.png>]
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 2083.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 2088.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [68]
 File: logos/logo_ECL.jpg Graphic file (type jpg)
 <use logos/logo_ECL.jpg>
-Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 2089.
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 2092.
 (pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
  [69]
-runsystem(latexminted cleantemp  --timestamp 20250613115633 782A7F9CDFC9E57E403
+<figures/Rendu_5/Le_nouveau_rendu_/default/fig4.png, id=1956, 244.915pt x 111.4
+1624pt>
+File: figures/Rendu_5/Le_nouveau_rendu_/default/fig4.png Graphic file (type png
+)
+<use figures/Rendu_5/Le_nouveau_rendu_/default/fig4.png>
+Package pdftex.def Info: figures/Rendu_5/Le_nouveau_rendu_/default/fig4.png  us
+ed on input line 2099.
+(pdftex.def)             Requested size: 364.19667pt x 165.68399pt.
+<figures/Rendu_5/Le_nouveau_rendu_/default/fig1.png, id=1957, 234.8775pt x 30.1
+125pt>
+File: figures/Rendu_5/Le_nouveau_rendu_/default/fig1.png Graphic file (type png
+)
+<use figures/Rendu_5/Le_nouveau_rendu_/default/fig1.png>
+Package pdftex.def Info: figures/Rendu_5/Le_nouveau_rendu_/default/fig1.png  us
+ed on input line 2113.
+(pdftex.def)             Requested size: 364.19667pt x 46.69179pt.
+<figures/Rendu_5/Le_nouveau_rendu_/default/fig2.png, id=1958, 234.8775pt x 30.1
+125pt>
+File: figures/Rendu_5/Le_nouveau_rendu_/default/fig2.png Graphic file (type png
+)
+<use figures/Rendu_5/Le_nouveau_rendu_/default/fig2.png>
+Package pdftex.def Info: figures/Rendu_5/Le_nouveau_rendu_/default/fig2.png  us
+ed on input line 2121.
+(pdftex.def)             Requested size: 364.19667pt x 46.69179pt.
+<figures/Rendu_5/Le_nouveau_rendu_/default/fig3.png, id=1959, 575.14874pt x 74.
+2775pt>
+File: figures/Rendu_5/Le_nouveau_rendu_/default/fig3.png Graphic file (type png
+)
+<use figures/Rendu_5/Le_nouveau_rendu_/default/fig3.png>
+Package pdftex.def Info: figures/Rendu_5/Le_nouveau_rendu_/default/fig3.png  us
+ed on input line 2129.
+(pdftex.def)             Requested size: 364.19667pt x 47.03534pt.
+File: logos/logo_ECL.jpg Graphic file (type jpg)
+<use logos/logo_ECL.jpg>
+Package pdftex.def Info: logos/logo_ECL.jpg  used on input line 2140.
+(pdftex.def)             Requested size: 120.45705pt x 23.28836pt.
+ [70
+
+ <./figures/Rendu_5/Le_nouveau_rendu_/default/fig4.png> <./figures/Rendu_5/Le_n
+ouveau_rendu_/default/fig1.png> <./figures/Rendu_5/Le_nouveau_rendu_/default/fi
+g2.png> <./figures/Rendu_5/Le_nouveau_rendu_/default/fig3.png>]
+runsystem(latexminted cleantemp  --timestamp 20250622185108 782A7F9CDFC9E57E403
 1AEAC36F7C0BC)...disabled (restricted).
 
  (S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.aux)
@@ -2149,13 +2190,13 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rappor
 t.out' has not changed.
-(rerunfilecheck)             Checksum: D4C8DDF3B8C90AA38EF51175C5462DF1;5285.
+(rerunfilecheck)             Checksum: 0DA76201A20BAAB55295DFD2167C0158;5524.
  ) 
 Here is how much of TeX's memory you used:
- 49319 strings out of 474485
- 1058245 string characters out of 5744678
- 2261542 words of memory out of 5000000
- 69332 multiletter control sequences out of 15000+600000
+ 49360 strings out of 474485
+ 1060094 string characters out of 5744678
+ 2260542 words of memory out of 5000000
+ 69366 multiletter control sequences out of 15000+600000
  577838 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,17n,121p,723b,1784s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2182,10 +2223,10 @@ Users\lab\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2074.pk><
 C:/Users/lab/AppData/Local/Programs/MiKTeX/fonts/type1/public/inconsolata/Incon
 solata-zi4b.pfb><C:/Users/lab/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 inconsolata/Inconsolata-zi4r.pfb>
-Output written on S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.pdf (70 pages, 
-1268946 bytes).
+Output written on S2-C_ZHENG_ZAVADSKIYI_LAVOGIEZ_POO-v4-rapport.pdf (71 pages, 
+1333939 bytes).
 PDF statistics:
- 2913 PDF objects out of 2984 (max. 8388607)
- 1492 named destinations out of 1728 (max. 500000)
- 549 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2942 PDF objects out of 2984 (max. 8388607)
+ 1499 named destinations out of 1728 (max. 500000)
+ 585 words of extra memory for PDF output out of 10000 (max. 10000000)
 

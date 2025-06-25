@@ -36,3 +36,5 @@
 \contentsline {subsection}{\numberline {4.9}Modifications de CountryVisit}{67}{subsection.4.9}%
 \contentsline {subsection}{\numberline {4.10}Classes de Test}{68}{subsection.4.10}%
 \contentsline {subsection}{\numberline {4.11}Conclusion}{68}{subsection.4.11}%
+\contentsline {section}{\numberline {5}Rendu 5}{70}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Le nouveau rendu !}{70}{subsection.5.1}%
